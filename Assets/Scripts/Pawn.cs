@@ -50,9 +50,6 @@ public class Pawn : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        health = 3.0f;
-        speed = 4;
-        strength = 1;
         board = transform.parent.GetComponent<Board>();
     }
 	
@@ -70,28 +67,31 @@ public class Pawn : MonoBehaviour {
 
         if(Input.GetKeyDown("space"))
         {
-            movePawn(Vector2.up);
+            moveGamePiece(Vector2.up);
         }
 	}
 
     // Move a single tile
-    public void movePawn(Vector2 direction)
+    public virtual void moveGamePiece(Vector2 direction)
     {
-        if(board.getTile(coordinates + direction) != null)
+        for (int i = 0; i < speed; i++)
         {
-            occupiedTile.passOccupant();
-            occupiedTile = board.getTile(coordinates + direction);
-            occupiedTile.recieveOccupant(gameObject.GetComponent<Pawn>());
-            coordinates += direction;
+            if (board.getTile(coordinates + direction) != null && !board.getTile(coordinates + direction).isOccupied())
+            {
+                occupiedTile.passOccupant();
+                occupiedTile = board.getTile(coordinates + direction);
+                occupiedTile.recieveOccupant(gameObject.GetComponent<Pawn>());
+                coordinates += direction;
+            }
         }
     }
 
     // Move multiple tiles
-    public void movePawn(Vector2 direction, int n)
+    public void moveGamePiece(Vector2 direction, int n)
     {
         for (int i = 0; i < n; i++)
         {
-            if (board.getTile(coordinates + direction) != null)
+            if (board.getTile(coordinates + direction) != null && !board.getTile(coordinates + direction).isOccupied())
             {
                 occupiedTile.passOccupant();
                 occupiedTile = board.getTile(coordinates + direction);

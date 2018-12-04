@@ -8,22 +8,23 @@ public class Board : MonoBehaviour {
     private GameSpace[,] gameBoard;
 
     [Header("Tile Info")]
-    public GameSpace baseGameSpace;
-    private GameSpace hoveredGameSpace;
-    private GameSpace selectedGameSpace;
+    public GameSpace baseGameSpace;         // The board's default tile prefab
+    private GameSpace hoveredGameSpace;     // Holds a reference to a tile when the mouse is hovering above it
+    private GameSpace selectedGameSpace;    // Holds a reference to a tile when it is clicked on
 
+    // Shaders used to inidcate a tile's selection status
     [Header("Title Shaders")]
     private Shader standardTileShader;
     private Shader hoverTileShader;
     private Shader neighborTileShader;
 
-    //Needed: List of pawns to place onto the board at initialization
-    //Will use a single pawn for now.
+
     [Header("Pawn Info")]
     public Pawn basePawn;
+    public Pawn rook;
+    // A list of all the pawns in the game. Currently unused.
     public Pawn[] pawns = new Pawn[1];
-    //private Pawn selectedPawn;
-
+   
     private void Awake()
     {
 
@@ -59,7 +60,6 @@ public class Board : MonoBehaviour {
                 gameBoard[x, y].name = "(" + x + "," + y + ")";
 
                 // Make each new square a child of the board
-                //squares[x,y].transform.parent = gameObject.transform;
                 gameBoard[x, y].transform.SetParent(gameObject.transform);
 
                 //Make sure the new square's coordinate match its position on the board
@@ -71,13 +71,24 @@ public class Board : MonoBehaviour {
 
 
         /**
-         *  Now we must place our pawn onto the board. Eventually we will have a list of pawns 
-         *  that need placing but for now we will make do with just one.
+         *  Now we must place our pawn onto the board.
+         *  Eventually this will be more sophisticated and allow for
+         *  multiple pawns for each player to be placed randomly
+         *  on the board at the beginning of the game
          **/
         
         Pawn p = GameObject.Instantiate(basePawn);
+        Pawn p1 = GameObject.Instantiate(basePawn);
+        Pawn p2 = GameObject.Instantiate(basePawn);
+        Pawn p3 = GameObject.Instantiate(rook);
         p.transform.parent = gameObject.transform;
+        p1.transform.parent = gameObject.transform;
+        p2.transform.parent = gameObject.transform;
+        p3.transform.parent = gameObject.transform;
         gameBoard[4,4].setOccupant(p);
+        gameBoard[3, 3].setOccupant(p1);
+        gameBoard[5, 3].setOccupant(p2);
+        gameBoard[4, 2].setOccupant(p3);
 
     }
 	
@@ -106,7 +117,6 @@ public class Board : MonoBehaviour {
     public void selectTile(Vector2 coords)
     {
         selectedGameSpace = gameBoard[(int)coords.x, (int)coords.y];
-        //selectedPawn = selectedGameSpace.getOccupant();
 
         Debug.Log("Selected Tile: " + coords);
 
@@ -114,16 +124,18 @@ public class Board : MonoBehaviour {
         {
             Vector2 direction = new Vector2(0, 0);
 
+            // If the tile exists
             if(g != null)
             {
+                // Get the direction of the tile relative to the selected tile (North/South/East/West)
                 direction = g.getCoordinates() - coords;
+
+                // Then, if the tile contains a pawn
                 if (g.isOccupied())
                 {
-                    g.getOccupant().movePawn(direction);
+                    // Move that pawn directly away from the selected tile
+                    g.getOccupant().moveGamePiece(direction);
                 }
-            } else
-            {
-                Debug.Log("Tile is null");
             }
             
             
@@ -179,14 +191,6 @@ public class Board : MonoBehaviour {
         {
             hoveredGameSpace.neighbors[3].setTileShader(standardTileShader);
         }
-    }
-
-    public void movePawn(Pawn p, Vector2 direction)
-    {
-        GameSpace originTile = getTile(p.getCoordinates());
-
-        // Get the coordinates of the desired tile to move to
-        GameSpace recievingTile = getTile(originTile.getCoordinates() + direction);
     }
 
 }
