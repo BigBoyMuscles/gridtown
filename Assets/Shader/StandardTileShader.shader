@@ -40,7 +40,7 @@ Shader "StandardTileShader"
 		float4 frag(v2f i) : SV_TARGET
 		{
 			return float4(.404, 0.09, .106, 1);
-			
+			//return float4(i.uv.x, i.uv.y, 1, 1);
 		}
 		ENDCG
 	}
