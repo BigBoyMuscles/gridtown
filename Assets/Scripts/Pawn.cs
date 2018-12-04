@@ -13,7 +13,7 @@ public class Pawn : MonoBehaviour {
     private Board board;
 
     private Vector2 coordinates;
-    private Tile occupiedTile;
+    private GameSpace occupiedTile;
 
     private SpriteRenderer spriteRenderer;
 
@@ -68,6 +68,10 @@ public class Pawn : MonoBehaviour {
         occupiedTile = board.getTile(coordinates);
         transform.position = occupiedTile.transform.position;
 
+        if(Input.GetKeyDown("space"))
+        {
+            movePawn(Vector2.up);
+        }
 	}
 
     // Move a single tile

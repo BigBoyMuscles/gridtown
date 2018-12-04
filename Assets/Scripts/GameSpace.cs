@@ -4,7 +4,7 @@ using UnityEngine;
 
 // Represents a single space on the game board
 // Refactored Square class to Tile. Might still be some loose references somewhere.
-public class Tile : MonoBehaviour
+public class GameSpace : MonoBehaviour
 {
     [SerializeField]
     private Pawn occupant;
@@ -21,11 +21,11 @@ public class Tile : MonoBehaviour
     [Header("Neighbors")]
     // see if it's possible to place this array inside the adjacent squares
     // struct so we can call neighbors.north and instead of neighbors[0]
-    public Tile[] neighbors; 
-    private Tile north;
-    private Tile east;
-    private Tile south;
-    private Tile west;
+    public GameSpace[] neighbors;
+    private GameSpace north;
+    private GameSpace east;
+    private GameSpace south;
+    private GameSpace west;
 
     //Struct for sotring whether a tile has neightbors or not
     //Look into using this struct to hold all neighbor data so we can 
@@ -49,11 +49,11 @@ public class Tile : MonoBehaviour
         //This is the bottom left corner of our board
 
 
-        // Needs to initialize and know it's adjacent squares on the game board;
+        // Needs to initialize and know its adjacent squares on the game board;
         setNeighbors();
         getNeighbors();
 
-        neighbors = new Tile[4];
+        neighbors = new GameSpace[4];
         neighbors[0] = north;
         neighbors[1] = east;
         neighbors[2] = south;
@@ -68,7 +68,7 @@ public class Tile : MonoBehaviour
         transform.position = new Vector3((coordinates.x * 1.125f) - 4, (coordinates.y * 1.125f) - 4, 0);
 
         // Move occupant pawn to the tile's new position
-        if(occupant != null)
+        if (occupant != null)
         {
             occupant.transform.position = transform.position;
         }
@@ -76,7 +76,7 @@ public class Tile : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        board.hoverTile(coordinates); 
+        board.hoverTile(coordinates);
     }
 
     private void OnMouseDown()
@@ -112,11 +112,13 @@ public class Tile : MonoBehaviour
         {
             hasNeighbor.west = false;
             hasNeighbor.east = true;
-        } else if(coordinates.x == 7)
+        }
+        else if (coordinates.x == 7)
         {
             hasNeighbor.east = false;
             hasNeighbor.west = true;
-        } else
+        }
+        else
         {
             hasNeighbor.west = true;
             hasNeighbor.east = true;
@@ -144,7 +146,7 @@ public class Tile : MonoBehaviour
     //Get references to neighbor tiles
     private void getNeighbors()
     {
-        if(hasNeighbor.north)
+        if (hasNeighbor.north)
         {
             north = board.getTile(coordinates + Vector2.up);
         }
@@ -156,7 +158,7 @@ public class Tile : MonoBehaviour
 
         if (hasNeighbor.south)
         {
-            south= board.getTile(coordinates + Vector2.down);
+            south = board.getTile(coordinates + Vector2.down);
         }
 
         if (hasNeighbor.west)
@@ -172,6 +174,26 @@ public class Tile : MonoBehaviour
         p.updateCoordinates(coordinates);
     }
 
+    public Pawn getOccupant()
+    {
+        if (isOccupied())
+        {
+            return occupant;
+        }
+        else return null;
+        
+    }
+    
+    public bool isOccupied()
+    {
+        if(occupant != null)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
     //Change the tile's shader, mostly for highlighting tiles
     public void setTileShader(Shader s)
     {
@@ -183,7 +205,7 @@ public class Tile : MonoBehaviour
         occupant = null;
     }
 
-    public  void recieveOccupant(Pawn p)
+    public void recieveOccupant(Pawn p)
     {
         occupant = p;
     }
