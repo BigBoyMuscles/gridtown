@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Represents a single space on the game board
-// I'm too lazy to do it now but this should probably renamed to Tile. Makes more sense that way.
+// Refactored Square class to Tile. Might still be some loose references somewhere.
 public class Tile : MonoBehaviour
 {
     [SerializeField]
@@ -19,12 +19,16 @@ public class Tile : MonoBehaviour
     private Shader hoverTileShader;
 
     [Header("Neighbors")]
-    public Tile north;
-    public Tile east;
-    public Tile south;
-    public Tile west;
+    // see if it's possible to place this array inside the adjacent squares
+    // struct so we can call neighbors.north and instead of neighbors[0]
+    public Tile[] neighbors; 
+    private Tile north;
+    private Tile east;
+    private Tile south;
+    private Tile west;
 
     //Struct for sotring whether a tile has neightbors or not
+    //Look into using this struct to hold all neighbor data so we can 
     public struct adjacentSquares
     {
         public bool north, east, south, west;
@@ -32,7 +36,7 @@ public class Tile : MonoBehaviour
     }
 
     [SerializeField]
-    public adjacentSquares neighbors;
+    public adjacentSquares hasNeighbor;
 
     // Use this for initialization
     void Start()
@@ -48,6 +52,13 @@ public class Tile : MonoBehaviour
         // Needs to initialize and know it's adjacent squares on the game board;
         setNeighbors();
         getNeighbors();
+
+        neighbors = new Tile[4];
+        neighbors[0] = north;
+        neighbors[1] = east;
+        neighbors[2] = south;
+        neighbors[3] = west;
+
     }
 
     // Update is called once per frame
@@ -99,29 +110,33 @@ public class Tile : MonoBehaviour
         //neighbor X
         if (coordinates.x == 0)
         {
-            neighbors.west = false;
+            hasNeighbor.west = false;
+            hasNeighbor.east = true;
         } else if(coordinates.x == 7)
         {
-            neighbors.east = false;
+            hasNeighbor.east = false;
+            hasNeighbor.west = true;
         } else
         {
-            neighbors.west = true;
-            neighbors.east = true;
+            hasNeighbor.west = true;
+            hasNeighbor.east = true;
         }
 
         //neighbor y
         if (coordinates.y == 0)
         {
-            neighbors.north = false;
+            hasNeighbor.north = true;
+            hasNeighbor.south = false;
         }
         else if (coordinates.y == 7)
         {
-            neighbors.south = false;
+            hasNeighbor.south = true;
+            hasNeighbor.north = false;
         }
         else
         {
-            neighbors.north = true;
-            neighbors.south = true;
+            hasNeighbor.north = true;
+            hasNeighbor.south = true;
         }
 
     }
@@ -129,19 +144,22 @@ public class Tile : MonoBehaviour
     //Get references to neighbor tiles
     private void getNeighbors()
     {
-        if(neighbors.north)
+        if(hasNeighbor.north)
         {
             north = board.getTile(coordinates + Vector2.up);
         }
-        if (neighbors.east)
+
+        if (hasNeighbor.east)
         {
             east = board.getTile(coordinates + Vector2.right);
         }
-        if (neighbors.south)
+
+        if (hasNeighbor.south)
         {
             south= board.getTile(coordinates + Vector2.down);
         }
-        if (neighbors.west)
+
+        if (hasNeighbor.west)
         {
             west = board.getTile(coordinates + Vector2.left);
         }

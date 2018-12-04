@@ -65,28 +65,12 @@ public class Pawn : MonoBehaviour {
             return;
         }
 
-        if (Input.GetKeyDown("down"))
-        {
-            movePawn(Vector2.down);
-        }
-        if (Input.GetKeyDown("left"))
-        {
-            movePawn(Vector2.left);
-        }
-        if (Input.GetKeyDown("right"))
-        {
-            movePawn(Vector2.right);
-        }
-        if (Input.GetKeyDown("up"))
-        {
-            movePawn(Vector2.up);
-        }
-
         occupiedTile = board.getTile(coordinates);
         transform.position = occupiedTile.transform.position;
 
 	}
 
+    // Move a single tile
     public void movePawn(Vector2 direction)
     {
         if(board.getTile(coordinates + direction) != null)
@@ -97,6 +81,22 @@ public class Pawn : MonoBehaviour {
             coordinates += direction;
         }
     }
+
+    // Move multiple tiles
+    public void movePawn(Vector2 direction, int n)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            if (board.getTile(coordinates + direction) != null)
+            {
+                occupiedTile.passOccupant();
+                occupiedTile = board.getTile(coordinates + direction);
+                occupiedTile.recieveOccupant(gameObject.GetComponent<Pawn>());
+                coordinates += direction;
+            }
+        }
+    }
+
 
     private bool isDead()
     {
@@ -111,6 +111,11 @@ public class Pawn : MonoBehaviour {
     public void kill()
     {
         health = health - health;
+    }
+
+    public Vector2 getCoordinates()
+    {
+        return coordinates;
     }
 
     public void updateCoordinates(Vector2 coords)
