@@ -20,6 +20,10 @@ public class Board : MonoBehaviour {
 
 
     [Header("Pawn Info")]
+
+    //This pawn drawer will replace basePawn/rook etc. We will get that info from the drawer;
+    //The drawer will also determin wh
+    public PawnDrawer pawnDrawer;
     public GamePiece basePawn;
     public GamePiece rook;
     // A list of all the pawns in the game. Currently unused.
@@ -138,10 +142,7 @@ public class Board : MonoBehaviour {
                 }
             }
             
-            
-
         }
-
         
     }
 

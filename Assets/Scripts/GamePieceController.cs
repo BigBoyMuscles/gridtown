@@ -7,7 +7,7 @@ using UnityEngine;
 // The pawn is the base class for game units. It contains the barebones 
 // functionality Required to interact with the game. 
 
-public class Pawn : GamePiece
+public class GamePieceController : GamePiece
 {
 
     //public PawnStats pawnStat;
