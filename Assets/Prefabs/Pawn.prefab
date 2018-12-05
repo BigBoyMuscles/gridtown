@@ -19,7 +19,8 @@ Prefab:
       propertyPath: strength
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1072238025651780}
   m_IsPrefabAsset: 0
@@ -31,8 +32,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4862654020723398}
-  - component: {fileID: 114212086394927572}
   - component: {fileID: 212939136285520576}
+  - component: {fileID: 114362052859875820}
   m_Layer: 0
   m_Name: Pawn
   m_TagString: Untagged
@@ -53,7 +54,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114212086394927572
+--- !u!114 &114362052859875820
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,12 +62,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1072238025651780}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0473411fc3a35824191c22e65ac2bd36, type: 3}
+  m_Script: {fileID: 11500000, guid: d7a3d47033603904880552aee578888f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
-  speed: 1
-  strength: 1
 --- !u!212 &212939136285520576
 SpriteRenderer:
   m_ObjectHideFlags: 1

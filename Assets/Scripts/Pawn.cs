@@ -2,132 +2,55 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pawn : MonoBehaviour {
+// Cleaner Implementation of a game piece controller. 
 
-    //Basic stats for now
-    [Header("Pawn Stats")]
-    public double health;
-    public int speed;
-    public int strength;
+// The pawn is the base class for game units. It contains the barebones 
+// functionality Required to interact with the game. 
 
-    private Board board;
-
+public class Pawn : GamePiece
+{
     private Vector2 coordinates;
+    private Board board;
     private GameSpace occupiedTile;
-
-    private SpriteRenderer spriteRenderer;
-
-    public struct Directions
-    {
-        Vector2 north;
-        Vector2 east;
-        Vector2 south;
-        Vector2 west;
-
-        public Directions(Vector2 n, Vector2 e, Vector2 s, Vector2 w)
-        {
-            north = n;
-            east = e;
-            south = s;
-            west = w;
-        }
-        
-    }
-
-    private Directions directions;
-
-
-    //This class will hold other info about pawns, such as:
-    //team ownership
-    //Status Effects
-    //Powerups
 
     private void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+       
+    }
+
+    private void Start()
+    {
+        board = GetComponentInParent<Board>();
+    }
+
+    private void Update()
+    {
+        occupiedTile = board.getTile(coordinates);
+        transform.position = board.getTile(coordinates).transform.position;
+    }
+
+    public override void moveGamePiece(Vector2 direction)
+    {
+        Vector2 destination = coordinates + direction;
+
+        if (board.getTile(coordinates + direction) != null && !board.getTile(coordinates + direction).isOccupied())
+        {
+            occupiedTile.passOccupant();
+            occupiedTile = board.getTile(coordinates + direction);
+            occupiedTile.recieveOccupant(gameObject.GetComponent<GamePiece>());
+            coordinates += direction;
+        }
+    }
+
+    public override void setCoordinates(Vector2 coords)
+    {
+        coordinates = coords;
         
     }
 
-    // Use this for initialization
-    void Start () {
-        board = transform.parent.GetComponent<Board>();
-    }
-	
-	// Update is called once per frame
-	void Update () {
-
-        if (isDead())
-        {
-            Debug.Log("Pawn Died");
-            return;
-        }
-
-        occupiedTile = board.getTile(coordinates);
-        transform.position = occupiedTile.transform.position;
-
-        if(Input.GetKeyDown("space"))
-        {
-            moveGamePiece(Vector2.up);
-        }
-	}
-
-    // Move a single tile
-    public virtual void moveGamePiece(Vector2 direction)
-    {
-        for (int i = 0; i < speed; i++)
-        {
-            if (board.getTile(coordinates + direction) != null && !board.getTile(coordinates + direction).isOccupied())
-            {
-                occupiedTile.passOccupant();
-                occupiedTile = board.getTile(coordinates + direction);
-                occupiedTile.recieveOccupant(gameObject.GetComponent<Pawn>());
-                coordinates += direction;
-            }
-        }
-    }
-
-    // Move multiple tiles
-    public void moveGamePiece(Vector2 direction, int n)
-    {
-        for (int i = 0; i < n; i++)
-        {
-            if (board.getTile(coordinates + direction) != null && !board.getTile(coordinates + direction).isOccupied())
-            {
-                occupiedTile.passOccupant();
-                occupiedTile = board.getTile(coordinates + direction);
-                occupiedTile.recieveOccupant(gameObject.GetComponent<Pawn>());
-                coordinates += direction;
-            }
-        }
-    }
-
-
-    private bool isDead()
-    {
-        if (health <= 0)
-        {
-            return true;
-        }
-
-        return false;
-    }
-
-    public void kill()
-    {
-        health = health - health;
-    }
-
-    public Vector2 getCoordinates()
+    public override Vector2 getCoordinates()
     {
         return coordinates;
     }
 
-    public void updateCoordinates(Vector2 coords)
-    {
-        coordinates = coords;
-    }
-    // Requires calls for movement / pawn interactions
-
-
-    
 }

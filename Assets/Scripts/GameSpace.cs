@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameSpace : MonoBehaviour
 {
     [SerializeField]
-    private Pawn occupant;
+    private GamePiece occupant;
     [SerializeField]
     private Vector2 coordinates;
 
@@ -168,13 +168,13 @@ public class GameSpace : MonoBehaviour
     }
 
     //Tell the tile which pawn is in its space
-    public void setOccupant(Pawn p)
+    public void setOccupant(GamePiece p)
     {
         occupant = p;
-        p.updateCoordinates(coordinates);
+        p.setCoordinates(coordinates);
     }
 
-    public Pawn getOccupant()
+    public GamePiece getOccupant()
     {
         if (isOccupied())
         {
@@ -205,7 +205,7 @@ public class GameSpace : MonoBehaviour
         occupant = null;
     }
 
-    public void recieveOccupant(Pawn p)
+    public void recieveOccupant(GamePiece p)
     {
         occupant = p;
     }

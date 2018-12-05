@@ -246,7 +246,12 @@ Prefab:
         type: 2}
       propertyPath: rook
       value: 
-      objectReference: {fileID: 114951340980762656, guid: fe8105f7b06287749b7c4120e6cad12d,
+      objectReference: {fileID: 0}
+    - target: {fileID: 114420483929318832, guid: 6dadff03732dcd04ba12eceb488b9ef8,
+        type: 2}
+      propertyPath: basePawn
+      value: 
+      objectReference: {fileID: 114362052859875820, guid: 13a30a707695dbf4e82f21f128b230a2,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dadff03732dcd04ba12eceb488b9ef8, type: 2}
