@@ -134,7 +134,6 @@ public class Board : MonoBehaviour {
                 if (g.isOccupied())
                 {
                     // Move that pawn directly away from the selected tile
-                    Debug.Log("Try to move that pawn");
                     g.getOccupant().moveGamePiece(direction);
                 }
             }

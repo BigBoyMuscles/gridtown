@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4211415936716398}
   - component: {fileID: 212178107191059518}
   - component: {fileID: 114951340980762656}
+  - component: {fileID: 114419795575871094}
   m_Layer: 0
   m_Name: Rook
   m_TagString: Untagged
@@ -41,6 +42,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114419795575871094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1589980257333696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80225ed6a87070c408ddf94a6832c19b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 4
+  power: 1
+  speed: 2
 --- !u!114 &114951340980762656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,6 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82e0e19b27210ff48995b29ed6ac66c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pawnStat: {fileID: 114419795575871094}
 --- !u!212 &212178107191059518
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -27,7 +27,7 @@ public class GameSpace : MonoBehaviour
     private GameSpace south;
     private GameSpace west;
 
-    //Struct for sotring whether a tile has neightbors or not
+    //Struct for sorting whether a tile has neightbors or not
     //Look into using this struct to hold all neighbor data so we can 
     public struct adjacentSquares
     {

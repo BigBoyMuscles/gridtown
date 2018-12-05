@@ -9,6 +9,9 @@ using UnityEngine;
 
 public class Pawn : GamePiece
 {
+
+    //public PawnStats pawnStat;
+
     private Vector2 coordinates;
     private Board board;
     private GameSpace occupiedTile;
@@ -21,6 +24,8 @@ public class Pawn : GamePiece
     private void Start()
     {
         board = GetComponentInParent<Board>();
+        pawnStat = GetComponent<PawnStats>();
+
     }
 
     private void Update()
@@ -31,14 +36,28 @@ public class Pawn : GamePiece
 
     public override void moveGamePiece(Vector2 direction)
     {
-        Vector2 destination = coordinates + direction;
+        Vector2 destCoords = coordinates + direction;
+        GameSpace destination = board.getTile(destCoords);
 
-        if (board.getTile(coordinates + direction) != null && !board.getTile(coordinates + direction).isOccupied())
-        {
-            occupiedTile.passOccupant();
-            occupiedTile = board.getTile(coordinates + direction);
-            occupiedTile.recieveOccupant(gameObject.GetComponent<GamePiece>());
-            coordinates += direction;
+        for (int i = 0; i < pawnStat.speed; i++)
+        {            
+            // Check that the destination tile exists on the GameBoard
+            if (destination != null && !pawnStat.isDead())
+            {
+                // Then check that tile to see if it is occupied by another GamePiece
+                if (destination.isOccupied())
+                {
+                    collide(destination.getOccupant());
+                }
+                else
+                {
+                    // If the tile is empty and valid, pass the pawn to the next tile
+                    occupiedTile.passOccupant();
+                    occupiedTile = board.getTile(coordinates + direction);
+                    occupiedTile.recieveOccupant(gameObject.GetComponent<GamePiece>());
+                    coordinates += direction;
+                }                
+            }
         }
     }
 
@@ -53,4 +72,14 @@ public class Pawn : GamePiece
         return coordinates;
     }
 
+    //Pass the game piece we collide with 
+    public override void collide(GamePiece p)
+    {
+        p.damage(pawnStat.power);        
+    }
+
+    public override void damage(int d)
+    {
+        pawnStat.damage(d);
+    }
 }
