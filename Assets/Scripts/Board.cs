@@ -20,10 +20,10 @@ public class Board : MonoBehaviour {
 
 
     [Header("Pawn Info")]
-    public Pawn basePawn;
-    public Pawn rook;
+    public GamePiece basePawn;
+    public GamePiece rook;
     // A list of all the pawns in the game. Currently unused.
-    public Pawn[] pawns = new Pawn[1];
+    public GamePiece[] pawns = new GamePiece[1];
    
     private void Awake()
     {
@@ -77,10 +77,10 @@ public class Board : MonoBehaviour {
          *  on the board at the beginning of the game
          **/
         
-        Pawn p = GameObject.Instantiate(basePawn);
-        Pawn p1 = GameObject.Instantiate(basePawn);
-        Pawn p2 = GameObject.Instantiate(basePawn);
-        Pawn p3 = GameObject.Instantiate(rook);
+        GamePiece p = GameObject.Instantiate(basePawn);
+        GamePiece p1 = GameObject.Instantiate(basePawn);
+        GamePiece p2 = GameObject.Instantiate(basePawn);
+        GamePiece p3 = GameObject.Instantiate(rook);
         p.transform.parent = gameObject.transform;
         p1.transform.parent = gameObject.transform;
         p2.transform.parent = gameObject.transform;
@@ -134,6 +134,7 @@ public class Board : MonoBehaviour {
                 if (g.isOccupied())
                 {
                     // Move that pawn directly away from the selected tile
+                    Debug.Log("Try to move that pawn");
                     g.getOccupant().moveGamePiece(direction);
                 }
             }
