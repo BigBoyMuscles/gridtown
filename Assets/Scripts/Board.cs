@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Board : MonoBehaviour {
 
+    public bool isHex = false;
+
     [SerializeField]
     private GameSpace[,] gameBoard;
 
@@ -18,6 +20,7 @@ public class Board : MonoBehaviour {
     private Shader hoverTileShader;
     private Shader neighborTileShader;
 
+    
 
     [Header("Pawn Info")]
 

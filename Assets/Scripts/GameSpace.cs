@@ -27,6 +27,8 @@ public class GameSpace : MonoBehaviour
     private GameSpace south;
     private GameSpace west;
 
+    public bool isOdd = false;
+
     //Struct for sorting whether a tile has neightbors or not
     //Look into using this struct to hold all neighbor data so we can 
     public struct adjacentSquares
@@ -59,6 +61,8 @@ public class GameSpace : MonoBehaviour
         neighbors[2] = south;
         neighbors[3] = west;
 
+
+
     }
 
     // Update is called once per frame
@@ -67,10 +71,23 @@ public class GameSpace : MonoBehaviour
         // Move tile to its physical space on the board. Offset to give space between tiles and center the board
         transform.position = new Vector3((coordinates.x * 1.125f) - 4, (coordinates.y * 1.125f) - 4, 0);
 
-        // Move occupant pawn to the tile's new position
-        if (occupant != null)
-        {
-            occupant.transform.position = transform.position;
+        //If the board is set to hex, offset the spaces. THis probably won't be used.
+        if (board.isHex) {
+
+
+            if (coordinates.x % 2 == 1)
+            {
+                transform.position += new Vector3(0, 0.25f, 0);
+            } else
+            {
+                transform.position += new Vector3(0, -0.25f, 0);
+            }
+
+            // Move occupant pawn to the tile's new position
+            if (occupant != null)
+            {
+                occupant.transform.position = transform.position;
+            }
         }
     }
 

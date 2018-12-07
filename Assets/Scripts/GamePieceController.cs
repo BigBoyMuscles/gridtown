@@ -31,7 +31,7 @@ public class GamePieceController : GamePiece
     private void Update()
     {
         occupiedTile = board.getTile(coordinates);
-        transform.position = board.getTile(coordinates).transform.position;
+        transform.position = board.getTile(coordinates).transform.position; 
     }
 
     public override void moveGamePiece(Vector2 direction)
