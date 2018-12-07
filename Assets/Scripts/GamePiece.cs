@@ -13,9 +13,4 @@ public abstract class GamePiece : MonoBehaviour
     public abstract Vector2 getCoordinates();
     public abstract void collide(GamePiece p);
     public abstract void damage(int d);
-
-    internal void damage()
-    {
-        throw new NotImplementedException();
-    }
 }

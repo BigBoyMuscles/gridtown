@@ -12,7 +12,7 @@ public class GamePieceController : GamePiece
 
     //public PawnStats pawnStat;
 
-    private Vector2 coordinates;
+    public Vector2 coordinates;
     private Board board;
     private GameSpace occupiedTile;
 
@@ -38,9 +38,7 @@ public class GamePieceController : GamePiece
     {
         Vector2 destCoords = coordinates + direction;
         GameSpace destination = board.getTile(destCoords);
-
-        for (int i = 0; i < pawnStat.speed; i++)
-        {            
+         
             // Check that the destination tile exists on the GameBoard
             if (destination != null && !pawnStat.isDead())
             {
@@ -58,11 +56,11 @@ public class GamePieceController : GamePiece
                     coordinates += direction;
                 }                
             }
-        }
     }
 
     public override void setCoordinates(Vector2 coords)
     {
+        Debug.Log("Setting controller coords to: " + coords);
         coordinates = coords;
         
     }
