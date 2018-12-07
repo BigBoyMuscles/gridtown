@@ -35,17 +35,26 @@ Prefab:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300126, guid: c88d0fa13bf91b84f92ff3bed0883f6a,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
-  m_SourcePrefab: {fileID: 0}
+  m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1072238025651780}
-  m_IsPrefabAsset: 0
+  m_IsPrefabParent: 0
 --- !u!1 &1072238025651780
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
+  serializedVersion: 5
   m_Component:
   - component: {fileID: 4862654020723398}
   - component: {fileID: 212939136285520576}
@@ -61,7 +70,7 @@ GameObject:
 --- !u!4 &4862654020723398
 Transform:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1072238025651780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -74,7 +83,7 @@ Transform:
 --- !u!114 &114009159884400030
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1072238025651780}
   m_Enabled: 1
@@ -88,7 +97,7 @@ MonoBehaviour:
 --- !u!114 &114235806026102620
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1072238025651780}
   m_Enabled: 1
@@ -97,10 +106,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pawnStat: {fileID: 114009159884400030}
+  coordinates: {x: 0, y: 0}
 --- !u!212 &212939136285520576
 SpriteRenderer:
   m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1072238025651780}
   m_Enabled: 1
@@ -132,7 +142,7 @@ SpriteRenderer:
   m_SortingLayerID: -519025539
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300126, guid: 26f3cdb99eddf2440984268b117fa82b, type: 3}
+  m_Sprite: {fileID: 21300126, guid: c88d0fa13bf91b84f92ff3bed0883f6a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -142,4 +152,3 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0

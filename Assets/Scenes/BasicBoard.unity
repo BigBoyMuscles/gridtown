@@ -301,3 +301,4 @@ MonoBehaviour:
   occupant: {fileID: 0}
   coordinates: {x: 0, y: 0}
   neighbors: []
+  isOdd: 0

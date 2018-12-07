@@ -1,125 +1,125 @@
 fileFormatVersion: 2
-guid: 26f3cdb99eddf2440984268b117fa82b
+guid: c88d0fa13bf91b84f92ff3bed0883f6a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Itch release raw tileset 01_0
-    21300002: Itch release raw tileset 01_1
-    21300004: Itch release raw tileset 01_2
-    21300006: Itch release raw tileset 01_3
-    21300008: Itch release raw tileset 01_4
-    21300010: Itch release raw tileset 01_5
-    21300012: Itch release raw tileset 01_6
-    21300014: Itch release raw tileset 01_7
-    21300016: Itch release raw tileset 01_8
-    21300018: Itch release raw tileset 01_9
-    21300020: Itch release raw tileset 01_10
-    21300022: Itch release raw tileset 01_11
-    21300024: Itch release raw tileset 01_12
-    21300026: Itch release raw tileset 01_13
-    21300028: Itch release raw tileset 01_14
-    21300030: Itch release raw tileset 01_15
-    21300032: Itch release raw tileset 01_16
-    21300034: Itch release raw tileset 01_17
-    21300036: Itch release raw tileset 01_18
-    21300038: Itch release raw tileset 01_19
-    21300040: Itch release raw tileset 01_20
-    21300042: Itch release raw tileset 01_21
-    21300044: Itch release raw tileset 01_22
-    21300046: Itch release raw tileset 01_23
-    21300048: Itch release raw tileset 01_24
-    21300050: Itch release raw tileset 01_25
-    21300052: Itch release raw tileset 01_26
-    21300054: Itch release raw tileset 01_27
-    21300056: Itch release raw tileset 01_28
-    21300058: Itch release raw tileset 01_29
-    21300060: Itch release raw tileset 01_30
-    21300062: Itch release raw tileset 01_31
-    21300064: Itch release raw tileset 01_32
-    21300066: Itch release raw tileset 01_33
-    21300068: Itch release raw tileset 01_34
-    21300070: Itch release raw tileset 01_35
-    21300072: Itch release raw tileset 01_36
-    21300074: Itch release raw tileset 01_37
-    21300076: Itch release raw tileset 01_38
-    21300078: Itch release raw tileset 01_39
-    21300080: Itch release raw tileset 01_40
-    21300082: Itch release raw tileset 01_41
-    21300084: Itch release raw tileset 01_42
-    21300086: Itch release raw tileset 01_43
-    21300088: Itch release raw tileset 01_44
-    21300090: Itch release raw tileset 01_45
-    21300092: Itch release raw tileset 01_46
-    21300094: Itch release raw tileset 01_47
-    21300096: Itch release raw tileset 01_48
-    21300098: Itch release raw tileset 01_49
-    21300100: Itch release raw tileset 01_50
-    21300102: Itch release raw tileset 01_51
-    21300104: Itch release raw tileset 01_52
-    21300106: Itch release raw tileset 01_53
-    21300108: Itch release raw tileset 01_54
-    21300110: Itch release raw tileset 01_55
-    21300112: Itch release raw tileset 01_56
-    21300114: Itch release raw tileset 01_57
-    21300116: Itch release raw tileset 01_58
-    21300118: Itch release raw tileset 01_59
-    21300120: Itch release raw tileset 01_60
-    21300122: Itch release raw tileset 01_61
-    21300124: Itch release raw tileset 01_62
-    21300126: Itch release raw tileset 01_63
-    21300128: Itch release raw tileset 01_64
-    21300130: Itch release raw tileset 01_65
-    21300132: Itch release raw tileset 01_66
-    21300134: Itch release raw tileset 01_67
-    21300136: Itch release raw tileset 01_68
-    21300138: Itch release raw tileset 01_69
-    21300140: Itch release raw tileset 01_70
-    21300142: Itch release raw tileset 01_71
-    21300144: Itch release raw tileset 01_72
-    21300146: Itch release raw tileset 01_73
-    21300148: Itch release raw tileset 01_74
-    21300150: Itch release raw tileset 01_75
-    21300152: Itch release raw tileset 01_76
-    21300154: Itch release raw tileset 01_77
-    21300156: Itch release raw tileset 01_78
-    21300158: Itch release raw tileset 01_79
-    21300160: Itch release raw tileset 01_80
-    21300162: Itch release raw tileset 01_81
-    21300164: Itch release raw tileset 01_82
-    21300166: Itch release raw tileset 01_83
-    21300168: Itch release raw tileset 01_84
-    21300170: Itch release raw tileset 01_85
-    21300172: Itch release raw tileset 01_86
-    21300174: Itch release raw tileset 01_87
-    21300176: Itch release raw tileset 01_88
-    21300178: Itch release raw tileset 01_89
-    21300180: Itch release raw tileset 01_90
-    21300182: Itch release raw tileset 01_91
-    21300184: Itch release raw tileset 01_92
-    21300186: Itch release raw tileset 01_93
-    21300188: Itch release raw tileset 01_94
-    21300190: Itch release raw tileset 01_95
-    21300192: Itch release raw tileset 01_96
-    21300194: Itch release raw tileset 01_97
-    21300196: Itch release raw tileset 01_98
-    21300198: Itch release raw tileset 01_99
-    21300200: Itch release raw tileset 01_100
-    21300202: Itch release raw tileset 01_101
-    21300204: Itch release raw tileset 01_102
-    21300206: Itch release raw tileset 01_103
-    21300208: Itch release raw tileset 01_104
-    21300210: Itch release raw tileset 01_105
-    21300212: Itch release raw tileset 01_106
-    21300214: Itch release raw tileset 01_107
-    21300216: Itch release raw tileset 01_108
-    21300218: Itch release raw tileset 01_109
-    21300220: Itch release raw tileset 01_110
-    21300222: Itch release raw tileset 01_111
-    21300224: Itch release raw tileset 01_112
-    21300226: Itch release raw tileset 01_113
-    21300228: Itch release raw tileset 01_114
-    21300230: Itch release raw tileset 01_115
-    21300232: Itch release raw tileset 01_116
-    21300234: Itch release raw tileset 01_117
+    21300000: SpriteSheet_0
+    21300002: SpriteSheet_1
+    21300004: SpriteSheet_2
+    21300006: SpriteSheet_3
+    21300008: SpriteSheet_4
+    21300010: SpriteSheet_5
+    21300012: SpriteSheet_6
+    21300014: SpriteSheet_7
+    21300016: SpriteSheet_8
+    21300018: SpriteSheet_9
+    21300020: SpriteSheet_10
+    21300022: SpriteSheet_11
+    21300024: SpriteSheet_12
+    21300026: SpriteSheet_13
+    21300028: SpriteSheet_14
+    21300030: SpriteSheet_15
+    21300032: SpriteSheet_16
+    21300034: SpriteSheet_17
+    21300036: SpriteSheet_18
+    21300038: SpriteSheet_19
+    21300040: SpriteSheet_20
+    21300042: SpriteSheet_21
+    21300044: SpriteSheet_22
+    21300046: SpriteSheet_23
+    21300048: SpriteSheet_24
+    21300050: SpriteSheet_25
+    21300052: SpriteSheet_26
+    21300054: SpriteSheet_27
+    21300056: SpriteSheet_28
+    21300058: SpriteSheet_29
+    21300060: SpriteSheet_30
+    21300062: SpriteSheet_31
+    21300064: SpriteSheet_32
+    21300066: SpriteSheet_33
+    21300068: SpriteSheet_34
+    21300070: SpriteSheet_35
+    21300072: SpriteSheet_36
+    21300074: SpriteSheet_37
+    21300076: SpriteSheet_38
+    21300078: SpriteSheet_39
+    21300080: SpriteSheet_40
+    21300082: SpriteSheet_41
+    21300084: SpriteSheet_42
+    21300086: SpriteSheet_43
+    21300088: SpriteSheet_44
+    21300090: SpriteSheet_45
+    21300092: SpriteSheet_46
+    21300094: SpriteSheet_47
+    21300096: SpriteSheet_48
+    21300098: SpriteSheet_49
+    21300100: SpriteSheet_50
+    21300102: SpriteSheet_51
+    21300104: SpriteSheet_52
+    21300106: SpriteSheet_53
+    21300108: SpriteSheet_54
+    21300110: SpriteSheet_55
+    21300112: SpriteSheet_56
+    21300114: SpriteSheet_57
+    21300116: SpriteSheet_58
+    21300118: SpriteSheet_59
+    21300120: SpriteSheet_60
+    21300122: SpriteSheet_61
+    21300124: SpriteSheet_62
+    21300126: SpriteSheet_63
+    21300128: SpriteSheet_64
+    21300130: SpriteSheet_65
+    21300132: SpriteSheet_66
+    21300134: SpriteSheet_67
+    21300136: SpriteSheet_68
+    21300138: SpriteSheet_69
+    21300140: SpriteSheet_70
+    21300142: SpriteSheet_71
+    21300144: SpriteSheet_72
+    21300146: SpriteSheet_73
+    21300148: SpriteSheet_74
+    21300150: SpriteSheet_75
+    21300152: SpriteSheet_76
+    21300154: SpriteSheet_77
+    21300156: SpriteSheet_78
+    21300158: SpriteSheet_79
+    21300160: SpriteSheet_80
+    21300162: SpriteSheet_81
+    21300164: SpriteSheet_82
+    21300166: SpriteSheet_83
+    21300168: SpriteSheet_84
+    21300170: SpriteSheet_85
+    21300172: SpriteSheet_86
+    21300174: SpriteSheet_87
+    21300176: SpriteSheet_88
+    21300178: SpriteSheet_89
+    21300180: SpriteSheet_90
+    21300182: SpriteSheet_91
+    21300184: SpriteSheet_92
+    21300186: SpriteSheet_93
+    21300188: SpriteSheet_94
+    21300190: SpriteSheet_95
+    21300192: SpriteSheet_96
+    21300194: SpriteSheet_97
+    21300196: SpriteSheet_98
+    21300198: SpriteSheet_99
+    21300200: SpriteSheet_100
+    21300202: SpriteSheet_101
+    21300204: SpriteSheet_102
+    21300206: SpriteSheet_103
+    21300208: SpriteSheet_104
+    21300210: SpriteSheet_105
+    21300212: SpriteSheet_106
+    21300214: SpriteSheet_107
+    21300216: SpriteSheet_108
+    21300218: SpriteSheet_109
+    21300220: SpriteSheet_110
+    21300222: SpriteSheet_111
+    21300224: SpriteSheet_112
+    21300226: SpriteSheet_113
+    21300228: SpriteSheet_114
+    21300230: SpriteSheet_115
+    21300232: SpriteSheet_116
+    21300234: SpriteSheet_117
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -149,7 +149,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: -1
-    mipBias: -100
+    mipBias: -1
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -177,7 +177,7 @@ TextureImporter:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -188,7 +188,7 @@ TextureImporter:
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -200,7 +200,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Itch release raw tileset 01_0
+      name: SpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -214,13 +214,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1ea98db2b8d7b542b2dfae094de9ce5
+      spriteID: b567637e0e3b62746914f81a8798263a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_1
+      name: SpriteSheet_1
       rect:
         serializedVersion: 2
         x: 8
@@ -234,13 +234,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3beec236e7756ad4e9bc985fea751a38
+      spriteID: dca374d3741ba8f438d698766b008240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_2
+      name: SpriteSheet_2
       rect:
         serializedVersion: 2
         x: 16
@@ -254,13 +254,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc708fee2a5899c49a2eab928a91d715
+      spriteID: 774d5da479cf12e44b287c93df1dc508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_3
+      name: SpriteSheet_3
       rect:
         serializedVersion: 2
         x: 24
@@ -274,13 +274,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c380021ca24fb541ab08bd7cc1adb49
+      spriteID: 967b1e8291f8c564b867deed0e5670ae
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_4
+      name: SpriteSheet_4
       rect:
         serializedVersion: 2
         x: 32
@@ -294,13 +294,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8832bb04842b674e98e04e352735d6d
+      spriteID: 558f5f7e26a3fb642988d7b34d552cc9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_5
+      name: SpriteSheet_5
       rect:
         serializedVersion: 2
         x: 40
@@ -314,13 +314,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c4cf45d1601dae48bb912feecdf731e
+      spriteID: 85084f6cde66b004e89ed4fc0fe77e4e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_6
+      name: SpriteSheet_6
       rect:
         serializedVersion: 2
         x: 48
@@ -334,13 +334,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7fb1934a85fac0419e0bf324f127c29
+      spriteID: 37ac6b15b18cbb64780e1ba6d9d70a47
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_7
+      name: SpriteSheet_7
       rect:
         serializedVersion: 2
         x: 56
@@ -354,13 +354,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49442dd531f0015438ac75b32999f272
+      spriteID: 5dacd25e90a5d744392b355f2f613efd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_8
+      name: SpriteSheet_8
       rect:
         serializedVersion: 2
         x: 0
@@ -374,13 +374,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29accc49067154f48860e8be78db211b
+      spriteID: 049f0f210e5659f4aac7a7d34287e756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_9
+      name: SpriteSheet_9
       rect:
         serializedVersion: 2
         x: 8
@@ -394,13 +394,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf8e2dea844ed1a49b364f4f28b873ce
+      spriteID: ff6d0ffee23f93f49a335efe76508f42
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_10
+      name: SpriteSheet_10
       rect:
         serializedVersion: 2
         x: 16
@@ -414,13 +414,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac875bb74ba3ea54b831b091d4261ca6
+      spriteID: 5b33821b45d973d46bd2537db0fc9bf1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_11
+      name: SpriteSheet_11
       rect:
         serializedVersion: 2
         x: 24
@@ -434,13 +434,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5aa074b0d82f6a348a24dded9d6b0601
+      spriteID: 239cc8655f3f78248b386ce751c7d1b2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_12
+      name: SpriteSheet_12
       rect:
         serializedVersion: 2
         x: 32
@@ -454,13 +454,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e50cd591c7afe8449a09c184a496959
+      spriteID: 6f117023af5b7af428e2318cd20b380e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_13
+      name: SpriteSheet_13
       rect:
         serializedVersion: 2
         x: 40
@@ -474,13 +474,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82e1bdd47e65b8449b6695f0006ca5f1
+      spriteID: 2587178a0827a9c41a6f7d34c5fc2516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_14
+      name: SpriteSheet_14
       rect:
         serializedVersion: 2
         x: 48
@@ -494,13 +494,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 530d2de47c8bc08449f35ae37f438ea0
+      spriteID: 89664532e1d3ee24c9230b36ba18945d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_15
+      name: SpriteSheet_15
       rect:
         serializedVersion: 2
         x: 56
@@ -514,13 +514,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d99c162e7b1454c499b1d8bd0557a669
+      spriteID: 25eee3af55709394cbe746dffd8c5e73
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_16
+      name: SpriteSheet_16
       rect:
         serializedVersion: 2
         x: 0
@@ -534,13 +534,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d819de5898f8fa4eaad49cf02538d24
+      spriteID: 0d2c6877da2c84741876c99d4f1017df
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_17
+      name: SpriteSheet_17
       rect:
         serializedVersion: 2
         x: 8
@@ -554,13 +554,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 452162b962c161a4f95045dc0b0aa7e0
+      spriteID: e0ced88b8fadb86458100c09f5e26964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_18
+      name: SpriteSheet_18
       rect:
         serializedVersion: 2
         x: 16
@@ -574,13 +574,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd85a281dcd452d408acf096895b9c4f
+      spriteID: 7fd6faa497ce6ba489481c3f716e0d54
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_19
+      name: SpriteSheet_19
       rect:
         serializedVersion: 2
         x: 24
@@ -594,13 +594,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05975417d8baceb4994f0a46741539a4
+      spriteID: 157bdfb83f1f6c74187fdacbdd6a5645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_20
+      name: SpriteSheet_20
       rect:
         serializedVersion: 2
         x: 32
@@ -614,13 +614,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04d149f2dfe8587408cc757f2767f16c
+      spriteID: 4b67964d312e49f4b830273b86b6bdc7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_21
+      name: SpriteSheet_21
       rect:
         serializedVersion: 2
         x: 40
@@ -634,13 +634,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f219b99018325c84fb1a47240d59cc1a
+      spriteID: 5f63e2ebab757974eacd020e6b59470a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_22
+      name: SpriteSheet_22
       rect:
         serializedVersion: 2
         x: 48
@@ -654,13 +654,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cce650f4d49e6ea4799367fdc1c4a243
+      spriteID: 38b2d7fc8782c7742bce97c63f0bab74
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_23
+      name: SpriteSheet_23
       rect:
         serializedVersion: 2
         x: 56
@@ -674,13 +674,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27021b0a5855f3247a553889aab71288
+      spriteID: 4db400810982d7a45bb6bf2760843480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_24
+      name: SpriteSheet_24
       rect:
         serializedVersion: 2
         x: 0
@@ -694,13 +694,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65350af5c6869dd4589330f003f734d9
+      spriteID: ecbfd5b35e4d5fb49adbec0c576e16a4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_25
+      name: SpriteSheet_25
       rect:
         serializedVersion: 2
         x: 8
@@ -714,13 +714,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 284311cde5699e242bb9eafd34ce3312
+      spriteID: 43dd4da8f1fac19499a98062feeefdc8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_26
+      name: SpriteSheet_26
       rect:
         serializedVersion: 2
         x: 16
@@ -734,13 +734,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18d18fd96194b5b48ba5e00b72472e16
+      spriteID: e9928397b8181cf46a78c7e74b5a5577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_27
+      name: SpriteSheet_27
       rect:
         serializedVersion: 2
         x: 24
@@ -754,13 +754,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db8907476a02092489f4b3125463d5f3
+      spriteID: 110d4b85051dce2428d3e8019ce14ce7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_28
+      name: SpriteSheet_28
       rect:
         serializedVersion: 2
         x: 32
@@ -774,13 +774,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ad97b1846f7a3b4a9309e80c30eafe0
+      spriteID: 97338e44fd8465340bf27c65434843b2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_29
+      name: SpriteSheet_29
       rect:
         serializedVersion: 2
         x: 40
@@ -794,13 +794,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a7a2634f23fdb4ca58ac8078d386d4
+      spriteID: bed57e6202cda784eb04d3fe89725444
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_30
+      name: SpriteSheet_30
       rect:
         serializedVersion: 2
         x: 48
@@ -814,13 +814,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 498b163aae2074349a21d7241d3eef88
+      spriteID: 23bdfab8908479b4f9fad5356756c0ed
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_31
+      name: SpriteSheet_31
       rect:
         serializedVersion: 2
         x: 56
@@ -834,13 +834,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 654ef7b2dc878e3488a705ccca5885b6
+      spriteID: 643e33eb9fe7dea42b1f35e238b7bde8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_32
+      name: SpriteSheet_32
       rect:
         serializedVersion: 2
         x: 0
@@ -854,13 +854,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ad7cfd29ebd55246992a664ea78e358
+      spriteID: 2028b6bfd2ab8e74cbf276eeb76cdf78
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_33
+      name: SpriteSheet_33
       rect:
         serializedVersion: 2
         x: 8
@@ -874,13 +874,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1724df16a7b6684cb5a15d684ba8e16
+      spriteID: 99326e81eb60b3346890054ca6508e32
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_34
+      name: SpriteSheet_34
       rect:
         serializedVersion: 2
         x: 16
@@ -894,13 +894,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10f3fb3eb1e8066459e24d90b9aa620b
+      spriteID: 7bab7a4c0d3c53f498888e3ec6644312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_35
+      name: SpriteSheet_35
       rect:
         serializedVersion: 2
         x: 24
@@ -914,13 +914,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03ecc372eb4d3ec499693fb0620f16ae
+      spriteID: 70a56f7be3f1a1b4ca0885ac88203973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_36
+      name: SpriteSheet_36
       rect:
         serializedVersion: 2
         x: 32
@@ -934,13 +934,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e51c60bf82559664b96e933eb803d7e7
+      spriteID: e3ed052e992db9944b38eb889f8a408b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_37
+      name: SpriteSheet_37
       rect:
         serializedVersion: 2
         x: 40
@@ -954,13 +954,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1525f4a216c24fd45a0af1cf4ce0d5cd
+      spriteID: f51e4195e109eb741961700a13cc59d6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_38
+      name: SpriteSheet_38
       rect:
         serializedVersion: 2
         x: 48
@@ -974,13 +974,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3462c44d8666e164bad490f6ab737ba6
+      spriteID: 44ac69237be3a3243b92c6381ed6e669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_39
+      name: SpriteSheet_39
       rect:
         serializedVersion: 2
         x: 56
@@ -994,13 +994,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5d4af7124b28304f84db6920bcd387b
+      spriteID: 5a98f6ef9ec8bf54b90b86c9c12a4175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_40
+      name: SpriteSheet_40
       rect:
         serializedVersion: 2
         x: 0
@@ -1014,13 +1014,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 590a99c758ed5c64c964ba6ee66a01fe
+      spriteID: b90d6e9070fbb3d4a86f04a66182f825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_41
+      name: SpriteSheet_41
       rect:
         serializedVersion: 2
         x: 8
@@ -1034,13 +1034,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7abbb6d8c960b514982a08c5af85eec5
+      spriteID: b9daa5f0cacd12f4e9215bea5cb188e0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_42
+      name: SpriteSheet_42
       rect:
         serializedVersion: 2
         x: 16
@@ -1054,13 +1054,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc7d3d947e781ab40bfa5a201479cfaa
+      spriteID: edd36c5d1a76bb846a4bfa321a775f95
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_43
+      name: SpriteSheet_43
       rect:
         serializedVersion: 2
         x: 24
@@ -1074,13 +1074,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62b07e8bc0cd5a641a11241bd6f6747c
+      spriteID: e486979375b1266438f2bff5bb4e8c83
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_44
+      name: SpriteSheet_44
       rect:
         serializedVersion: 2
         x: 32
@@ -1094,13 +1094,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e33e350dea751ec4fbbaa932c3f9f4e6
+      spriteID: 2972c8d2b7d0fb748b21b920ca64ddb4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_45
+      name: SpriteSheet_45
       rect:
         serializedVersion: 2
         x: 40
@@ -1114,13 +1114,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af36a9eafc576384eabc10920c4fe801
+      spriteID: 974f3a40dc02a4b4882dfb501263b693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_46
+      name: SpriteSheet_46
       rect:
         serializedVersion: 2
         x: 48
@@ -1134,13 +1134,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc303d8ba7d95c84cbf08054ec237a37
+      spriteID: ce06989def557914a871784574b3c56c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_47
+      name: SpriteSheet_47
       rect:
         serializedVersion: 2
         x: 56
@@ -1154,13 +1154,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddf6b6b316beaa349bfe655ed0271b51
+      spriteID: 2ce0e0ff47485104f9c1bf410311bec8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_48
+      name: SpriteSheet_48
       rect:
         serializedVersion: 2
         x: 0
@@ -1174,13 +1174,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fd72e79f59ceb641a9f986e042fedcc
+      spriteID: 86d26057c88f23949a671a2cb72d3808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_49
+      name: SpriteSheet_49
       rect:
         serializedVersion: 2
         x: 8
@@ -1194,13 +1194,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7344ca56af3632840a57d1511bb6d36f
+      spriteID: 10782ebd40d0e1541984644f8d834538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_50
+      name: SpriteSheet_50
       rect:
         serializedVersion: 2
         x: 16
@@ -1214,13 +1214,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66478367b157a3048994d85ae8495307
+      spriteID: a9ea56abe7e2ffd429bef77d392bebe7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_51
+      name: SpriteSheet_51
       rect:
         serializedVersion: 2
         x: 24
@@ -1234,13 +1234,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 005f16e8c308689459950a37afd740fd
+      spriteID: e277febc4f2452342a90b9c902c032a3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_52
+      name: SpriteSheet_52
       rect:
         serializedVersion: 2
         x: 32
@@ -1254,13 +1254,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe0ae0d2576215e4fa5bf48d8f59d8b3
+      spriteID: 85df352636deab740974d217edfca16d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_53
+      name: SpriteSheet_53
       rect:
         serializedVersion: 2
         x: 40
@@ -1274,13 +1274,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 563d456bdc033a84b990a827d8190d3c
+      spriteID: 042730d3847ea674481ce94be2c197d9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_54
+      name: SpriteSheet_54
       rect:
         serializedVersion: 2
         x: 48
@@ -1294,13 +1294,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63b7370c42260064293631200867e2a2
+      spriteID: 3d0a91ad4d6941f4ab6fb08ddb2e71b8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_55
+      name: SpriteSheet_55
       rect:
         serializedVersion: 2
         x: 56
@@ -1314,13 +1314,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0765df4d06f87348b2aa1a4976ca2d8
+      spriteID: af20fdaab9b23e64b996a586d9c5c445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_56
+      name: SpriteSheet_56
       rect:
         serializedVersion: 2
         x: 0
@@ -1334,13 +1334,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8423ef00767f260449c7e823bcc5e2c9
+      spriteID: 17c74e787c9d01f48999594ae71280f6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_57
+      name: SpriteSheet_57
       rect:
         serializedVersion: 2
         x: 8
@@ -1354,13 +1354,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9558a7035f75d0544aa050150c7757aa
+      spriteID: 5e4dda0c455dfe447b54e9ee62faddb4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_58
+      name: SpriteSheet_58
       rect:
         serializedVersion: 2
         x: 16
@@ -1374,13 +1374,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11daacb6aa35ff146baafd72dcb5262c
+      spriteID: 89cc49952516741448a2e9a7edbcec0a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_59
+      name: SpriteSheet_59
       rect:
         serializedVersion: 2
         x: 24
@@ -1394,13 +1394,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d0b1e8120c7df6479beac46f47ee4a5
+      spriteID: 814f69d8ed64a1c4bb688c430bf4d4dd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_60
+      name: SpriteSheet_60
       rect:
         serializedVersion: 2
         x: 32
@@ -1414,13 +1414,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2c06d4db86cd954a89078b43052240a
+      spriteID: dbc25df8b8435f742a9cfc817c189ad0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_61
+      name: SpriteSheet_61
       rect:
         serializedVersion: 2
         x: 40
@@ -1434,13 +1434,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ca2f9433b61e9e41892f611015733bc
+      spriteID: 828b3b55ad11d6440802cbb8cf914ef5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_62
+      name: SpriteSheet_62
       rect:
         serializedVersion: 2
         x: 48
@@ -1454,13 +1454,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0ad7ebf8f8ac9945ac6dbe544f01546
+      spriteID: f6bed7ccd65381e4fa6229b1f45154ae
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_63
+      name: SpriteSheet_63
       rect:
         serializedVersion: 2
         x: 56
@@ -1474,13 +1474,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53a6ab3d18de83940919fe701546921c
+      spriteID: 72574008a11e7f74eb2991c0269516cc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_64
+      name: SpriteSheet_64
       rect:
         serializedVersion: 2
         x: 0
@@ -1494,13 +1494,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 729a537b2ad0fbe43b9f103da36bf7a9
+      spriteID: 4cf61b02716adbb4cbcf3a7b7e7a5800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_65
+      name: SpriteSheet_65
       rect:
         serializedVersion: 2
         x: 8
@@ -1514,13 +1514,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dceb50721ef179499f223739f5536ca
+      spriteID: 3bb99341ad57b90439c5ef998b478c65
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_66
+      name: SpriteSheet_66
       rect:
         serializedVersion: 2
         x: 16
@@ -1534,13 +1534,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82a9d438ca30fe148a7e71a73d4afad6
+      spriteID: 42d4f9067f556ae4da5f667d4179f6f8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_67
+      name: SpriteSheet_67
       rect:
         serializedVersion: 2
         x: 24
@@ -1554,13 +1554,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16910cd3e36a6864ba120adaaca72129
+      spriteID: 5bacf754cf6f01944942c9109a9434d1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_68
+      name: SpriteSheet_68
       rect:
         serializedVersion: 2
         x: 32
@@ -1574,13 +1574,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4caeaa83ec6074d418a2f995016685f3
+      spriteID: 0e3d3d94fd1c0304a9ea81a1fcafc9d0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_69
+      name: SpriteSheet_69
       rect:
         serializedVersion: 2
         x: 40
@@ -1594,13 +1594,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c1eedc18b71ddd4c9ade070c17e6368
+      spriteID: 6518e0a8dd689c942966755491b318aa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_70
+      name: SpriteSheet_70
       rect:
         serializedVersion: 2
         x: 48
@@ -1614,13 +1614,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9f013efc8f1eea4699d2195f4771625
+      spriteID: 6db5c5ed51c565743b0637481d80d3c1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_71
+      name: SpriteSheet_71
       rect:
         serializedVersion: 2
         x: 56
@@ -1634,13 +1634,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c008354f300fed43928bfa4d8cfbdf0
+      spriteID: 28d685a1b16da7d448404fc4bc4e41e5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_72
+      name: SpriteSheet_72
       rect:
         serializedVersion: 2
         x: 0
@@ -1654,13 +1654,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 768cad78271fd484d819509d2edffdb2
+      spriteID: 5b3f9a7d6e129ed4b9c907201f267a89
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_73
+      name: SpriteSheet_73
       rect:
         serializedVersion: 2
         x: 8
@@ -1674,13 +1674,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccda641d9f2c2a24391934085ed35a70
+      spriteID: fe9ebbbc71b62bb44974bef3cb0bfd96
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_74
+      name: SpriteSheet_74
       rect:
         serializedVersion: 2
         x: 16
@@ -1694,13 +1694,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 296b9dea99ee8c14fbecd3056c8046d8
+      spriteID: 4a3b94205c2cd16418ce9a87403d03ac
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_75
+      name: SpriteSheet_75
       rect:
         serializedVersion: 2
         x: 24
@@ -1714,13 +1714,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9027b51a755321940ba468ec3b2973ca
+      spriteID: 95029efab622cc3468673c1a50a2339f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_76
+      name: SpriteSheet_76
       rect:
         serializedVersion: 2
         x: 32
@@ -1734,13 +1734,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25cb1cdc67a41644da8ce649c3d7152b
+      spriteID: 36a0e8613f860f1499bb13ca97a3ac98
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_77
+      name: SpriteSheet_77
       rect:
         serializedVersion: 2
         x: 40
@@ -1754,13 +1754,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff62e84084b311a4d919397a133daf88
+      spriteID: 8ac746b5cb23183498a16a65232a802f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_78
+      name: SpriteSheet_78
       rect:
         serializedVersion: 2
         x: 48
@@ -1774,13 +1774,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 616229f2f72d2a14abe20deda41950e3
+      spriteID: 8c5c387e43518b94b8220ec207ed6423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_79
+      name: SpriteSheet_79
       rect:
         serializedVersion: 2
         x: 56
@@ -1794,13 +1794,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebc06b76fb1ecd64eb8409c49d75865d
+      spriteID: a8285b4bc11a9254e919aa00f38a0056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_80
+      name: SpriteSheet_80
       rect:
         serializedVersion: 2
         x: 0
@@ -1814,13 +1814,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f640dc453efd0d43b5600bbf535ff3a
+      spriteID: f5a8cb512e9eb7745abd9b22d992edf3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_81
+      name: SpriteSheet_81
       rect:
         serializedVersion: 2
         x: 8
@@ -1834,13 +1834,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7650f3e3e42dac546a49a59c711585d3
+      spriteID: d74583c177bc67b46932ffae8ca04675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_82
+      name: SpriteSheet_82
       rect:
         serializedVersion: 2
         x: 16
@@ -1854,13 +1854,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef62da347b80c244aada928c6a07d1bc
+      spriteID: f20dd3b204535b4468271eeba4205849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_83
+      name: SpriteSheet_83
       rect:
         serializedVersion: 2
         x: 24
@@ -1874,13 +1874,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88042b85593072d4b8faeff2f1618701
+      spriteID: 093c3302ed9323042b28da253a6c5c97
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_84
+      name: SpriteSheet_84
       rect:
         serializedVersion: 2
         x: 32
@@ -1894,13 +1894,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 384bdf5e92b1c7641aeb82ee5aaa2124
+      spriteID: 3b83276066bccf74b9b99f33b3a4b5c3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_85
+      name: SpriteSheet_85
       rect:
         serializedVersion: 2
         x: 40
@@ -1914,13 +1914,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b800c52b3b497248aef049d41a401a9
+      spriteID: a6e73936595c4214b82f60eb78b8db6e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_86
+      name: SpriteSheet_86
       rect:
         serializedVersion: 2
         x: 48
@@ -1934,13 +1934,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e98f1c5dcd99a4542a78b9497750454c
+      spriteID: a78a98728c66d0641b4e4f36336e4cd6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_87
+      name: SpriteSheet_87
       rect:
         serializedVersion: 2
         x: 56
@@ -1954,13 +1954,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04522fb9213e80248b21a919e27c864e
+      spriteID: a300657a6154bbb4d9ce5e3fb340cd0d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_88
+      name: SpriteSheet_88
       rect:
         serializedVersion: 2
         x: 0
@@ -1974,13 +1974,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1ea6b9770bef9f43b21a24d5c8a5a2d
+      spriteID: 96349a278b86f3942b637bf0017ebb21
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_89
+      name: SpriteSheet_89
       rect:
         serializedVersion: 2
         x: 8
@@ -1994,13 +1994,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2286917e3fe614441be030410d547485
+      spriteID: 5cfd3ed2395b62c42836df5bf9f304af
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_90
+      name: SpriteSheet_90
       rect:
         serializedVersion: 2
         x: 16
@@ -2014,13 +2014,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7d46f12a87a5844d9aa9eff4a6aea71
+      spriteID: 7f6d09a3cd4ed9349a291be5f9d72586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_91
+      name: SpriteSheet_91
       rect:
         serializedVersion: 2
         x: 24
@@ -2034,13 +2034,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c54fec14edeb224cb876c52f726f409
+      spriteID: 9e9748bb94bfbb548b717dfcd37de856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_92
+      name: SpriteSheet_92
       rect:
         serializedVersion: 2
         x: 32
@@ -2054,13 +2054,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b83d7074611447348927aec4e174f49a
+      spriteID: 460ec190d9749694dad76c8fc71892f4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_93
+      name: SpriteSheet_93
       rect:
         serializedVersion: 2
         x: 40
@@ -2074,13 +2074,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee12cc0039fa75349b6fb40cd13ee199
+      spriteID: dcf6180511ea1f24b9dcd4657ae18d04
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_94
+      name: SpriteSheet_94
       rect:
         serializedVersion: 2
         x: 48
@@ -2094,13 +2094,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f818b95b7021b7b48ae8528e61e3e7f3
+      spriteID: 101147bfc9924e64d8d42e210633f0eb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_95
+      name: SpriteSheet_95
       rect:
         serializedVersion: 2
         x: 56
@@ -2114,13 +2114,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbf86aa52a6dd864f8f7611166f21491
+      spriteID: ef51d62c91709de49b866b72877d939e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_96
+      name: SpriteSheet_96
       rect:
         serializedVersion: 2
         x: 0
@@ -2134,13 +2134,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e223976f23807d46a483b59a740c0af
+      spriteID: 9ef5e705976887041adb5c75f29d0949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_97
+      name: SpriteSheet_97
       rect:
         serializedVersion: 2
         x: 8
@@ -2154,13 +2154,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c81bb19b60351e4e8bd37d4c26140e8
+      spriteID: aea7608a967f9874194f9e18cc13f61d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_98
+      name: SpriteSheet_98
       rect:
         serializedVersion: 2
         x: 16
@@ -2174,13 +2174,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa0d9868cbb95d34cb54e0e021c20de6
+      spriteID: 09e5d9a82ee4f0a44ac8a2bf78e01361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_99
+      name: SpriteSheet_99
       rect:
         serializedVersion: 2
         x: 24
@@ -2194,13 +2194,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e531f42a60eca2b47b2683e01c6230b7
+      spriteID: b2542a8117df4ef40916ca4bc5f3a671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_100
+      name: SpriteSheet_100
       rect:
         serializedVersion: 2
         x: 32
@@ -2214,13 +2214,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e02ffdc0aaddbe149ab5cb428f02e504
+      spriteID: 8d4d8a2a07d0cb748b80156c8cb87d60
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_101
+      name: SpriteSheet_101
       rect:
         serializedVersion: 2
         x: 40
@@ -2234,13 +2234,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 752e1c6f908575e47a165ceb48b0c8fa
+      spriteID: 29f0501f6e41bf145a958eacb1ae6a7d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_102
+      name: SpriteSheet_102
       rect:
         serializedVersion: 2
         x: 48
@@ -2254,13 +2254,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 362e201a80a63e44fafd74069fd4b9a0
+      spriteID: 71d8da8633768ad4a92ce8f95b488037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_103
+      name: SpriteSheet_103
       rect:
         serializedVersion: 2
         x: 56
@@ -2274,13 +2274,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8110ab0fec8246f45941a0caede1bdb1
+      spriteID: 115896b63e51235419d3d19ec6742479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_104
+      name: SpriteSheet_104
       rect:
         serializedVersion: 2
         x: 0
@@ -2294,13 +2294,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c25f707f18afcb14daf915715a1ed0ac
+      spriteID: 3eb7e80b6acefce408e750c13b6966e9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_105
+      name: SpriteSheet_105
       rect:
         serializedVersion: 2
         x: 8
@@ -2314,13 +2314,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b28dada6fe88eda468e8382d73f1ef54
+      spriteID: 6dcb33cea68f34e478481d394f9a749e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_106
+      name: SpriteSheet_106
       rect:
         serializedVersion: 2
         x: 16
@@ -2334,13 +2334,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab8e1e32227e3704fa1af4261e580949
+      spriteID: af6a9115148bc6a4387e00e3b3d3348b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_107
+      name: SpriteSheet_107
       rect:
         serializedVersion: 2
         x: 24
@@ -2354,13 +2354,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d0b2b346a5a2b042b0f2ab913376890
+      spriteID: 4cc964ff1a337c146841781c04e8f4fc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_108
+      name: SpriteSheet_108
       rect:
         serializedVersion: 2
         x: 32
@@ -2374,13 +2374,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee675cae17afbba4fba225dee26daa73
+      spriteID: e29462c97ab9c534ba593a7eadc7dde8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_109
+      name: SpriteSheet_109
       rect:
         serializedVersion: 2
         x: 40
@@ -2394,13 +2394,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44c742807c24244458b325b780e4927d
+      spriteID: bac2b708f2c083a4086870384444314d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_110
+      name: SpriteSheet_110
       rect:
         serializedVersion: 2
         x: 48
@@ -2414,13 +2414,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe6969d8ab1d3a04481544c8e8420ef0
+      spriteID: 10b873b9dc948084ba44c99d0c3c8ca9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_111
+      name: SpriteSheet_111
       rect:
         serializedVersion: 2
         x: 56
@@ -2434,13 +2434,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 561afafc908bd624f87d115476817310
+      spriteID: 27d82e14e9c671b4c8b835067b2c15af
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_112
+      name: SpriteSheet_112
       rect:
         serializedVersion: 2
         x: 0
@@ -2454,13 +2454,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 577b104308bf8474298a70eebe4745c4
+      spriteID: b5c5a373cf68983448734c7eb7714a6c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_113
+      name: SpriteSheet_113
       rect:
         serializedVersion: 2
         x: 8
@@ -2474,13 +2474,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d19427920160acc48a7f4f621c1aca97
+      spriteID: cb51ba16600e2654aa76168e03fb944a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_114
+      name: SpriteSheet_114
       rect:
         serializedVersion: 2
         x: 16
@@ -2494,13 +2494,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16335ed67afebc947b347e0f005d2e5f
+      spriteID: a01291abf6bcb7a4496c218682691472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_115
+      name: SpriteSheet_115
       rect:
         serializedVersion: 2
         x: 24
@@ -2514,13 +2514,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 879323d20e78fbb4d99111bce404427f
+      spriteID: a94d89fae835b604da717ef9815e1ad3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_116
+      name: SpriteSheet_116
       rect:
         serializedVersion: 2
         x: 32
@@ -2534,13 +2534,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffdd9493afe7d0a419582dd9b65f8fb7
+      spriteID: 534363957da349f4d998cbe407edc5a1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Itch release raw tileset 01_117
+      name: SpriteSheet_117
       rect:
         serializedVersion: 2
         x: 40
@@ -2554,7 +2554,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f7036956c59999419ff8ba269cddb58
+      spriteID: 042d3cd10031a684792f9bae6e406ee8
       vertices: []
       indices: 
       edges: []
@@ -2562,7 +2562,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4a3dd17b490175e489531ecac1957a51
+    spriteID: 4e3f1c2b8107ec847ad32c8831db728e
     vertices: []
     indices: 
     edges: []
