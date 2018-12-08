@@ -6,12 +6,15 @@ public class Rook : GamePiece {
 
     public GamePieceController controller;
     private PawnStats stats;
+    private new Sprite graveMarker;
 
     // Use this for initialization
     void Start()
     {
         controller = GetComponent<GamePieceController>();
+        graveMarker = controller.graveMarker;
         stats = GetComponent<PawnStats>();
+        
     }
 
     // Update is called once per frame
@@ -55,5 +58,8 @@ public class Rook : GamePiece {
         controller.setCoordinates(coords);
     }
 
-
+    public override void kill()
+    {
+        controller.kill();
+    }
 }

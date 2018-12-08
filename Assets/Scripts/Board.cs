@@ -83,19 +83,12 @@ public class Board : MonoBehaviour {
          *  multiple pawns for each player to be placed randomly
          *  on the board at the beginning of the game
          **/
+
         
-        GamePiece p = GameObject.Instantiate(basePawn);
-        GamePiece p1 = GameObject.Instantiate(basePawn);
-        GamePiece p2 = GameObject.Instantiate(basePawn);
-        GamePiece p3 = GameObject.Instantiate(rook);
-        p.transform.parent = gameObject.transform;
-        p1.transform.parent = gameObject.transform;
-        p2.transform.parent = gameObject.transform;
-        p3.transform.parent = gameObject.transform;
-        gameBoard[4,4].setOccupant(p);
-        gameBoard[3, 3].setOccupant(p1);
-        gameBoard[5, 3].setOccupant(p2);
-        gameBoard[4, 2].setOccupant(p3);
+        placePawn(4, 4);
+        placePawn(3, 3);
+        placePawn(5, 3);
+        placePawn(4, 2);
 
     }
 	
@@ -127,25 +120,37 @@ public class Board : MonoBehaviour {
 
         Debug.Log("Selected Tile: " + coords);
 
-        foreach(GameSpace g in selectedGameSpace.neighbors)
+        if (selectedGameSpace.isOccupied())
         {
-            Vector2 direction = new Vector2(0, 0);
+            Debug.Log("Cannot create pawn in occupied tile");
+        }else
+        {
 
-            // If the tile exists
-            if(g != null)
-            {
-                // Get the direction of the tile relative to the selected tile (North/South/East/West)
-                direction = g.getCoordinates() - coords;
-
-                // Then, if the tile contains a pawn
-                if (g.isOccupied())
-                {
-                    // Move that pawn directly away from the selected tile
-                    g.getOccupant().moveGamePiece(direction);
-                }
-            }
             
+
+            foreach (GameSpace g in selectedGameSpace.neighbors)
+            {
+                Vector2 direction = new Vector2(0, 0);
+
+                // If the tile exists
+                if (g != null)
+                {
+                    // Get the direction of the tile relative to the selected tile (North/South/East/West)
+                    direction = g.getCoordinates() - coords;
+
+                    // Then, if the tile contains a pawn
+                    if (g.isOccupied())
+                    {
+                        // Move that pawn directly away from the selected tile
+                        g.getOccupant().moveGamePiece(direction);
+                    }
+                }
+
+            }
+
+            placePawn(coords);
         }
+        
         
     }
 
@@ -195,6 +200,20 @@ public class Board : MonoBehaviour {
         {
             hoveredGameSpace.neighbors[3].setTileShader(standardTileShader);
         }
+    }
+
+    public void placePawn(Vector2 coords)
+    {
+        GamePiece p = GameObject.Instantiate(basePawn);
+        p.transform.parent = gameObject.transform;
+        gameBoard[(int)coords.x, (int)coords.y].setOccupant(p);
+    }
+
+    public void placePawn(int x, int y)
+    {
+        GamePiece p = GameObject.Instantiate(basePawn);
+        p.transform.parent = gameObject.transform;
+        gameBoard[x, y].setOccupant(p);
     }
 
 }

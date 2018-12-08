@@ -43,10 +43,6 @@ public class PawnStats : MonoBehaviour {
     public void damage(int d)
     {
         health = health - d;
-        if (isDead())
-        {
-            kill();
-        }
     }
 
     public bool isDead()
@@ -57,12 +53,5 @@ public class PawnStats : MonoBehaviour {
         }
 
         return false;
-    }
-
-    public void kill()
-    {
-        SpriteRenderer rend = GetComponent<SpriteRenderer>();
-        rend.color = new Color(255, 0, 0);
-        Debug.Log("Pawn Died");
     }
 }

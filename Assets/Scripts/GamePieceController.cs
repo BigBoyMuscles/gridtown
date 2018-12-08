@@ -31,7 +31,7 @@ public class GamePieceController : GamePiece
     private void Update()
     {
         occupiedTile = board.getTile(coordinates);
-        transform.position = board.getTile(coordinates).transform.position; 
+        transform.position = board.getTile(coordinates).transform.position;
     }
 
     public override void moveGamePiece(Vector2 direction)
@@ -79,5 +79,17 @@ public class GamePieceController : GamePiece
     public override void damage(int d)
     {
         pawnStat.damage(d);
+        if(pawnStat.isDead())
+        {
+            kill();
+        }
+    }
+
+    public override void kill()
+    {
+        SpriteRenderer rend = GetComponent<SpriteRenderer>();
+
+        //rend.color = new Color(255, 0, 0);
+        rend.sprite = graveMarker;
     }
 }
