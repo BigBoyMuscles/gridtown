@@ -197,6 +197,19 @@ public class Board : MonoBehaviour {
 
         return row;
     } 
+	
+	
+    public GameSpace[] getColumn(int x)
+    {
+        GameSpace[] column = new GameSpace[boardSize];
+
+        for(int y = 0; y < row.Length; y++)
+        {
+            column[y] = getTile(x, y);
+        }
+
+        return column;
+    }
 
     // Applies a shader to highligh tiles adjacent to tile mouse is hovering above
     public void highlightNeighbors()
