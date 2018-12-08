@@ -43,9 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80225ed6a87070c408ddf94a6832c19b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 4
+  health: 2
   power: 1
-  speed: 2
+  speed: 4
 --- !u!114 &114673113473585988
 MonoBehaviour:
   m_ObjectHideFlags: 1

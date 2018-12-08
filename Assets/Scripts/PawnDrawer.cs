@@ -6,18 +6,14 @@ public class PawnDrawer : MonoBehaviour {
 
     public int drawerSize;
     public GamePiece basePawn;
+    public GamePiece rook;
+
     private GamePiece[] pawns;
 
     private GamePiece nextPawn;
 
 	// Use this for initialization
 	void Start () {
-        pawns = new GamePiece[drawerSize];
-        
-        for(int i = 0; i < pawns.Length; i++)
-        {
-            pawns[i] = GamePiece.Instantiate(basePawn);
-        }
         
 	}
 

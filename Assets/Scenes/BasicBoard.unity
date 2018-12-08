@@ -213,6 +213,18 @@ Prefab:
       propertyPath: boardSize
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 114133070143193318, guid: 6dadff03732dcd04ba12eceb488b9ef8,
+        type: 2}
+      propertyPath: basePawn
+      value: 
+      objectReference: {fileID: 114235806026102620, guid: 13a30a707695dbf4e82f21f128b230a2,
+        type: 2}
+    - target: {fileID: 114133070143193318, guid: 6dadff03732dcd04ba12eceb488b9ef8,
+        type: 2}
+      propertyPath: rook
+      value: 
+      objectReference: {fileID: 114828045099106570, guid: 304166795c78a2f41861b991d85686b3,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dadff03732dcd04ba12eceb488b9ef8, type: 2}
   m_IsPrefabAsset: 0
@@ -326,7 +338,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f9d944ec98cdf944801b05c84f2b1ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  occupant: {fileID: 0}
-  coordinates: {x: 0, y: 0}
   neighbors: []
   isOdd: 0

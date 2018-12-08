@@ -36,9 +36,11 @@ public class GamePieceController : GamePiece
 
     public override void moveGamePiece(Vector2 direction)
     {
-        Vector2 destCoords = coordinates + direction;
-        GameSpace destination = board.getTile(destCoords);
-         
+        for (int i = 0; i < pawnStat.speed; i++)
+        {
+            Vector2 destCoords = coordinates + direction;
+            GameSpace destination = board.getTile(destCoords);
+
             // Check that the destination tile exists on the GameBoard
             if (destination != null && !pawnStat.isDead())
             {
@@ -49,13 +51,42 @@ public class GamePieceController : GamePiece
                 }
                 else
                 {
-                // If the tile is empty and valid, pass the pawn to the next tile
-                occupiedTile.passOccupant();
+                    // If the tile is empty and valid, pass the pawn to the next tile
+                    occupiedTile.passOccupant();
                     occupiedTile = board.getTile(coordinates + direction);
                     occupiedTile.recieveOccupant(gameObject.GetComponent<GamePiece>());
                     coordinates += direction;
-                }                
+                }
             }
+        }
+    }
+
+    public override void moveGamePiece(Vector2 direction, int speed)
+    {
+        for(int i = 0; i < speed; i++)
+        {
+            Vector2 destCoords = coordinates + direction;
+            GameSpace destination = board.getTile(destCoords);
+
+            // Check that the destination tile exists on the GameBoard
+            if (destination != null && !pawnStat.isDead())
+            {
+                // Then check that tile to see if it is occupied by another GamePiece
+                if (destination.isOccupied())
+                {
+                    collide(destination.getOccupant());
+                }
+                else
+                {
+                    // If the tile is empty and valid, pass the pawn to the next tile
+                    occupiedTile.passOccupant();
+                    occupiedTile = board.getTile(coordinates + direction);
+                    occupiedTile.recieveOccupant(gameObject.GetComponent<GamePiece>());
+                    coordinates += direction;
+                }
+            }
+        }
+
     }
 
     public override void setCoordinates(Vector2 coords)

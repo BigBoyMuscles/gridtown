@@ -40,17 +40,7 @@ public class Rook : GamePiece {
 
     public override void moveGamePiece(Vector2 direction)
     {
-        int moves = stats.speed;
-
-        // Implement custom Rook move logic
-        for(int i = 0; i < moves; i++)
-        {
-            controller.moveGamePiece(direction);
-        }
-        
-        
-
-        Debug.Log("Rook Speed: " + stats.speed);
+        controller.moveGamePiece(direction);
     }
 
     public override void setCoordinates(Vector2 coords)
@@ -61,5 +51,10 @@ public class Rook : GamePiece {
     public override void kill()
     {
         controller.kill();
+    }
+
+    public override void moveGamePiece(Vector2 direction, int speed)
+    {
+        controller.moveGamePiece(direction, speed);
     }
 }

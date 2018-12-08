@@ -86,10 +86,10 @@ public class Board : MonoBehaviour {
          **/
 
         
-        placePawn(4, 4, basePawn);
+        placePawn(4, 4, rook);
         placePawn(3, 3, basePawn);
         placePawn(5, 3, basePawn);
-        placePawn(4, 2, rook);
+        placePawn(4, 2, basePawn);
 
     }
 	

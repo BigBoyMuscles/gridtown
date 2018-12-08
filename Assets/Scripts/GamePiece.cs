@@ -10,6 +10,7 @@ public abstract class GamePiece : MonoBehaviour
     public Sprite graveMarker;
 
     public abstract void moveGamePiece(Vector2 direction);
+    public abstract void moveGamePiece(Vector2 direction, int speed);
     public abstract void setCoordinates(Vector2 coords);
     public abstract Vector2 getCoordinates();
     public abstract void collide(GamePiece p);

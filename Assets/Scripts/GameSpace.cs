@@ -6,9 +6,7 @@ using UnityEngine;
 // Refactored Square class to Tile. Might still be some loose references somewhere.
 public class GameSpace : MonoBehaviour
 {
-    [SerializeField]
     private GamePiece occupant;
-    [SerializeField]
     private Vector2 coordinates;
 
     private Board board;
