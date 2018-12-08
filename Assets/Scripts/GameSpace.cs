@@ -69,7 +69,7 @@ public class GameSpace : MonoBehaviour
     void Update()
     {
         // Move tile to its physical space on the board. Offset to give space between tiles and center the board
-        transform.position = new Vector3((coordinates.x * 1.125f) - 4, (coordinates.y * 1.125f) - 4, 0);
+        transform.position = new Vector3((coordinates.x * 1.125f) - (board.boardSize / 2), (coordinates.y * 1.125f) - (board.boardSize / 2), 0);
 
         //If the board is set to hex, offset the spaces. THis probably won't be used.
         if (board.isHex) {
@@ -130,7 +130,7 @@ public class GameSpace : MonoBehaviour
             hasNeighbor.west = false;
             hasNeighbor.east = true;
         }
-        else if (coordinates.x == 7)
+        else if (coordinates.x == board.boardSize - 1)
         {
             hasNeighbor.east = false;
             hasNeighbor.west = true;
@@ -147,7 +147,7 @@ public class GameSpace : MonoBehaviour
             hasNeighbor.north = true;
             hasNeighbor.south = false;
         }
-        else if (coordinates.y == 7)
+        else if (coordinates.y == board.boardSize - 1)
         {
             hasNeighbor.south = true;
             hasNeighbor.north = false;

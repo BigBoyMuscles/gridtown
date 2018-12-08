@@ -49,8 +49,8 @@ public class GamePieceController : GamePiece
                 }
                 else
                 {
-                    // If the tile is empty and valid, pass the pawn to the next tile
-                    occupiedTile.passOccupant();
+                // If the tile is empty and valid, pass the pawn to the next tile
+                occupiedTile.passOccupant();
                     occupiedTile = board.getTile(coordinates + direction);
                     occupiedTile.recieveOccupant(gameObject.GetComponent<GamePiece>());
                     coordinates += direction;
@@ -60,9 +60,7 @@ public class GamePieceController : GamePiece
 
     public override void setCoordinates(Vector2 coords)
     {
-        Debug.Log("Setting controller coords to: " + coords);
         coordinates = coords;
-        
     }
 
     public override Vector2 getCoordinates()

@@ -8,6 +8,7 @@ public class Board : MonoBehaviour {
 
     [SerializeField]
     private GameSpace[,] gameBoard;
+    public int boardSize = 8;
 
     [Header("Tile Info")]
     public GameSpace baseGameSpace;         // The board's default tile prefab
@@ -23,12 +24,12 @@ public class Board : MonoBehaviour {
     
 
     [Header("Pawn Info")]
-
     //This pawn drawer will replace basePawn/rook etc. We will get that info from the drawer;
     //The drawer will also determin wh
     public PawnDrawer pawnDrawer;
     public GamePiece basePawn;
     public GamePiece rook;
+
     // A list of all the pawns in the game. Currently unused.
     public GamePiece[] pawns = new GamePiece[1];
    
@@ -52,7 +53,7 @@ public class Board : MonoBehaviour {
          * **/
 
         //Create an 8x8 playing field
-        gameBoard = new GameSpace[8,8];
+        gameBoard = new GameSpace[boardSize,boardSize];
        
         //iterate X
         for (int x = 0; x < gameBoard.GetLength(0); x++){
@@ -63,7 +64,7 @@ public class Board : MonoBehaviour {
                 //Make each square of our gameboard an empty square object
                 gameBoard[x, y] = GameObject.Instantiate(baseGameSpace);
 
-                // Give each square a name in the editor (Name will be griid coordinates for ease of use)
+                // Give each square a name in the editor (Name will be grid coordinates for ease of use)
                 gameBoard[x, y].name = "(" + x + "," + y + ")";
 
                 // Make each new square a child of the board
@@ -85,10 +86,10 @@ public class Board : MonoBehaviour {
          **/
 
         
-        placePawn(4, 4);
-        placePawn(3, 3);
-        placePawn(5, 3);
-        placePawn(4, 2);
+        placePawn(4, 4, basePawn);
+        placePawn(3, 3, basePawn);
+        placePawn(5, 3, basePawn);
+        placePawn(4, 2, rook);
 
     }
 	
@@ -116,49 +117,86 @@ public class Board : MonoBehaviour {
     // Called when a tile is clicked on
     public void selectTile(Vector2 coords)
     {
-        selectedGameSpace = gameBoard[(int)coords.x, (int)coords.y];
+        selectedGameSpace = getTile(coords);
 
         Debug.Log("Selected Tile: " + coords);
 
-        if (selectedGameSpace.isOccupied())
-        {
-            Debug.Log("Cannot create pawn in occupied tile");
-        }else
+        if (selectedGameSpace != null)
         {
 
-            
 
-            foreach (GameSpace g in selectedGameSpace.neighbors)
+            if (selectedGameSpace.isOccupied())
             {
-                Vector2 direction = new Vector2(0, 0);
+                Debug.Log("Cannot create pawn in occupied tile");
+            }
+            else
+            {
 
-                // If the tile exists
-                if (g != null)
+
+
+                foreach (GameSpace g in selectedGameSpace.neighbors)
                 {
-                    // Get the direction of the tile relative to the selected tile (North/South/East/West)
-                    direction = g.getCoordinates() - coords;
+                    Vector2 direction = new Vector2(0, 0);
 
-                    // Then, if the tile contains a pawn
-                    if (g.isOccupied())
+                    // If the tile exists
+                    if (g != null)
                     {
-                        // Move that pawn directly away from the selected tile
-                        g.getOccupant().moveGamePiece(direction);
+                        // Get the direction of the tile relative to the selected tile (North/South/East/West)
+                        direction = g.getCoordinates() - coords;
+
+                        // Then, if the tile contains a pawn
+                        if (g.isOccupied())
+                        {
+                            // Move that pawn directly away from the selected tile
+                            g.getOccupant().moveGamePiece(direction);
+                        }
                     }
+
                 }
 
+                placePawn(coords, basePawn);
             }
-
-            placePawn(coords);
         }
-        
-        
     }
 
     // Called when we need to access a specific tile from the game board array
     public GameSpace getTile(Vector2 coords)
     {
+
+        int length = boardSize - 1;
+
+        if(coords.x > length || coords.x < 0 || coords.y > length || coords.y < 0)
+        {
+            return null;
+        }
+
         return gameBoard[(int)coords.x, (int)coords.y];
     }
+
+    public GameSpace getTile(int x, int y)
+    {
+
+        int length = boardSize - 1;
+
+        if (x > length || x < 0 || y > length || y < 0)
+        {
+            return null;
+        }
+
+        return gameBoard[x, y];
+    }
+
+    public GameSpace[] getRow(int y)
+    {
+        GameSpace[] row = new GameSpace[boardSize];
+
+        for(int x = 0; x < row.Length; x++)
+        {
+            row[x] = getTile(x, y);
+        }
+
+        return row;
+    } 
 
     // Applies a shader to highligh tiles adjacent to tile mouse is hovering above
     public void highlightNeighbors()
@@ -202,16 +240,16 @@ public class Board : MonoBehaviour {
         }
     }
 
-    public void placePawn(Vector2 coords)
+    public void placePawn(Vector2 coords, GamePiece t)
     {
-        GamePiece p = GameObject.Instantiate(basePawn);
+        GamePiece p = GameObject.Instantiate(t);
         p.transform.parent = gameObject.transform;
         gameBoard[(int)coords.x, (int)coords.y].setOccupant(p);
     }
 
-    public void placePawn(int x, int y)
+    public void placePawn(int x, int y, GamePiece t)
     {
-        GamePiece p = GameObject.Instantiate(basePawn);
+        GamePiece p = GameObject.Instantiate(t);
         p.transform.parent = gameObject.transform;
         gameBoard[x, y].setOccupant(p);
     }

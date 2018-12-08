@@ -6,13 +6,13 @@ public class Rook : GamePiece {
 
     public GamePieceController controller;
     private PawnStats stats;
-    private new Sprite graveMarker;
+    //private new Sprite graveMarker;
 
     // Use this for initialization
     void Start()
     {
         controller = GetComponent<GamePieceController>();
-        graveMarker = controller.graveMarker;
+        this.graveMarker = controller.graveMarker;
         stats = GetComponent<PawnStats>();
         
     }
