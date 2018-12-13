@@ -125,12 +125,17 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1557754605}
   m_Script: {fileID: 11500000, guid: 628865c8e216d814f8f38dc6b504277c, type: 3}
+--- !u!4 &1439030262 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4370076557734182, guid: 6dadff03732dcd04ba12eceb488b9ef8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1557754605}
 --- !u!1001 &1557754605
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1975915828}
     m_Modifications:
     - target: {fileID: 114133070143193318, guid: 6dadff03732dcd04ba12eceb488b9ef8,
         type: 2}
@@ -139,27 +144,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4370076557734182, guid: 6dadff03732dcd04ba12eceb488b9ef8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.228642
+      value: -7.4538336
       objectReference: {fileID: 0}
     - target: {fileID: 4370076557734182, guid: 6dadff03732dcd04ba12eceb488b9ef8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -9.449669
+      value: -9.422125
       objectReference: {fileID: 0}
     - target: {fileID: 4370076557734182, guid: 6dadff03732dcd04ba12eceb488b9ef8, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.018044842
+      value: -0.6938261
       objectReference: {fileID: 0}
     - target: {fileID: 4370076557734182, guid: 6dadff03732dcd04ba12eceb488b9ef8, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4370076557734182, guid: 6dadff03732dcd04ba12eceb488b9ef8, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4370076557734182, guid: 6dadff03732dcd04ba12eceb488b9ef8, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4370076557734182, guid: 6dadff03732dcd04ba12eceb488b9ef8, type: 2}
       propertyPath: m_LocalRotation.w
@@ -167,7 +172,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4370076557734182, guid: 6dadff03732dcd04ba12eceb488b9ef8, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114133070143193318, guid: 6dadff03732dcd04ba12eceb488b9ef8,
         type: 2}
@@ -211,7 +216,7 @@ Prefab:
     - target: {fileID: 114420483929318832, guid: 6dadff03732dcd04ba12eceb488b9ef8,
         type: 2}
       propertyPath: boardSize
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114133070143193318, guid: 6dadff03732dcd04ba12eceb488b9ef8,
         type: 2}
@@ -225,6 +230,16 @@ Prefab:
       value: 
       objectReference: {fileID: 114828045099106570, guid: 304166795c78a2f41861b991d85686b3,
         type: 2}
+    - target: {fileID: 114420483929318832, guid: 6dadff03732dcd04ba12eceb488b9ef8,
+        type: 2}
+      propertyPath: game
+      value: 
+      objectReference: {fileID: 1975915827}
+    - target: {fileID: 114420483929318832, guid: 6dadff03732dcd04ba12eceb488b9ef8,
+        type: 2}
+      propertyPath: pawns.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dadff03732dcd04ba12eceb488b9ef8, type: 2}
   m_IsPrefabAsset: 0
@@ -326,6 +341,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   board: {fileID: 898372636}
+--- !u!1 &1975915826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1975915828}
+  - component: {fileID: 1975915827}
+  m_Layer: 0
+  m_Name: GameRunner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1975915827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975915826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b3a46d27eb8e644a8c793612d67829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameBoard: {fileID: 898372636}
+  pawnPanel: {fileID: 114630710224706792, guid: a68947c1451577548acea56f3ede510e,
+    type: 2}
+  title: 
+  health: 0
+  power: 0
+  speed: 0
+--- !u!4 &1975915828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1975915826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2251915, y: -0.02754356, z: 0.67578125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1439030262}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1412454931700261
 MonoBehaviour:
   m_ObjectHideFlags: 0

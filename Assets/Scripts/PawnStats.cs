@@ -15,7 +15,6 @@ public class PawnStats : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
 	}
 
     public void setStats(int h, int p, int s)
