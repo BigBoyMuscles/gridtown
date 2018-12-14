@@ -121,4 +121,9 @@ public class GamePieceController : GamePiece
         //rend.color = new Color(255, 0, 0);
         rend.sprite = graveMarker;
     }
+
+    public override Vector2[] getMoves()
+    {
+        return this.moves;
+    }
 }

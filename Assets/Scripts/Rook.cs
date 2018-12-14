@@ -40,7 +40,8 @@ public class Rook : GamePiece {
 
     public override void moveGamePiece(Vector2 direction)
     {
-        controller.moveGamePiece(direction);
+        controller.moveGamePiece(direction, 1);
+        controller.moveGamePiece(new Vector2(1, 1), 1);
     }
 
     public override void setCoordinates(Vector2 coords)
@@ -56,5 +57,10 @@ public class Rook : GamePiece {
     public override void moveGamePiece(Vector2 direction, int speed)
     {
         controller.moveGamePiece(direction, speed);
+    }
+
+    public override Vector2[] getMoves()
+    {
+        return this.moves;
     }
 }
