@@ -55,7 +55,16 @@ public class GameState : MonoBehaviour {
     public void setSelectedGameSpace(GameSpace s)
     {
         selectedGameSpace = s;
-        pawn = s.getOccupant();
-        redPanel.setSelectedPawn(pawn);
+        if(s.getOccupant() != null)
+        {
+            pawn = s.getOccupant();
+            redPanel.setSelectedPawn(pawn);
+        } else
+        {
+            pawn = null;
+            redPanel.clearSelectedPawn();
+        }
+        
+        
     }
 }

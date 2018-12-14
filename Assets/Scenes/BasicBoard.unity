@@ -333,6 +333,41 @@ Prefab:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114630710224706792, guid: a68947c1451577548acea56f3ede510e,
+        type: 2}
+      propertyPath: pawnTitle
+      value: 
+      objectReference: {fileID: 1612493882}
+    - target: {fileID: 114630710224706792, guid: a68947c1451577548acea56f3ede510e,
+        type: 2}
+      propertyPath: healthText
+      value: 
+      objectReference: {fileID: 1118847853}
+    - target: {fileID: 114630710224706792, guid: a68947c1451577548acea56f3ede510e,
+        type: 2}
+      propertyPath: powerText
+      value: 
+      objectReference: {fileID: 938670208}
+    - target: {fileID: 114630710224706792, guid: a68947c1451577548acea56f3ede510e,
+        type: 2}
+      propertyPath: speedText
+      value: 
+      objectReference: {fileID: 18546614}
+    - target: {fileID: 114630710224706792, guid: a68947c1451577548acea56f3ede510e,
+        type: 2}
+      propertyPath: pawnHealth
+      value: 
+      objectReference: {fileID: 1118847853}
+    - target: {fileID: 114630710224706792, guid: a68947c1451577548acea56f3ede510e,
+        type: 2}
+      propertyPath: pawnPower
+      value: 
+      objectReference: {fileID: 938670208}
+    - target: {fileID: 114630710224706792, guid: a68947c1451577548acea56f3ede510e,
+        type: 2}
+      propertyPath: pawnSpeed
+      value: 
+      objectReference: {fileID: 18546614}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a68947c1451577548acea56f3ede510e, type: 2}
   m_IsPrefabAsset: 0

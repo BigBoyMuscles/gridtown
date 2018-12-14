@@ -25,7 +25,6 @@ public class GamePieceController : GamePiece
     {
         board = GetComponentInParent<Board>();
         pawnStat = GetComponent<PawnStats>();
-
     }
 
     private void Update()

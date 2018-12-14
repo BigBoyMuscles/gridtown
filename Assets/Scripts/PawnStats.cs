@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PawnStats : MonoBehaviour {
 
+    public string title;
     public int health = 1;
     public int power = 1;
     public int speed = 1;

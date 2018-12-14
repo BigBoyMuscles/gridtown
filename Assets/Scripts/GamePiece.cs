@@ -9,7 +9,7 @@ public abstract class GamePiece : MonoBehaviour
     public PawnStats pawnStat;
     public Sprite graveMarker;
     public Vector2[] moves;
-
+    
     public abstract void moveGamePiece(Vector2 direction);
     public abstract void moveGamePiece(Vector2 direction, int speed);
     public abstract void setCoordinates(Vector2 coords);

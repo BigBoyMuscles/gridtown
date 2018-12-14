@@ -171,7 +171,7 @@ public class Board : MonoBehaviour {
     {
         GameSpace[] column = new GameSpace[boardSize];
 
-        for(int y = 0; y < row.Length; y++)
+        for(int y = 0; y < column.Length; y++)
         {
             column[y] = getTile(x, y);
         }
