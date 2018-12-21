@@ -77,6 +77,8 @@ MonoBehaviour:
   graveMarker: {fileID: 21300218, guid: c88d0fa13bf91b84f92ff3bed0883f6a, type: 3}
   moves: []
   controller: {fileID: 114673113473585988}
+  gameBoard: {fileID: 114420483929318832, guid: 6dadff03732dcd04ba12eceb488b9ef8,
+    type: 2}
 --- !u!212 &212939136285520576
 SpriteRenderer:
   m_ObjectHideFlags: 1

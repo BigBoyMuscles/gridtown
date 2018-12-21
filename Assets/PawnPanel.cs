@@ -58,7 +58,7 @@ public class PawnPanel : MonoBehaviour {
 
         // Get sprite renderer of child instead of main renderer
         rend.sprite = p.GetComponent<SpriteRenderer>().sprite;
-        //pawnTitle.text = p.GetComponent<PawnStats>().title;
+        
         //updatePawnPanel();
 
 

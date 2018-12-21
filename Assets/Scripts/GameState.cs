@@ -8,8 +8,10 @@ public class GameState : MonoBehaviour {
     public PawnPanel pawnPanel;
 
     private GameSpace selectedGameSpace;
+    private GameSpace previousGameSpace;
     private GamePiece pawn;
-    private PawnPanel redPanel;    
+    private PawnPanel redPanel;
+    private bool redTurn;
 
     [SerializeField]
     private string title;
@@ -22,6 +24,8 @@ public class GameState : MonoBehaviour {
 
     [SerializeField]
     private int speed;
+
+    private Vector2[] validMoves;
 
 	// Use this for initialization
 	void Start () {
@@ -42,29 +46,50 @@ public class GameState : MonoBehaviour {
         // Move the game piece to that square
         // Otherwise, clear the selected gamepiece
 
+        if (previousGameSpace != null)
+        {
+
+        }
 		if(pawn != null)
         {
             health = pawn.pawnStat.health;
             power = pawn.pawnStat.power;
             speed = pawn.pawnStat.speed;
-
             
         }
 	}
 
     public void setSelectedGameSpace(GameSpace s)
     {
+        previousGameSpace = selectedGameSpace;
         selectedGameSpace = s;
+
+        gameBoard.dimAllSpaces();
+
+        
+
         if(s.getOccupant() != null)
         {
             pawn = s.getOccupant();
             redPanel.setSelectedPawn(pawn);
-        } else
+
+            validMoves = gameBoard.getValidMoves(pawn.getMoves());
+            gameBoard.highlightGameSpaces(validMoves);
+
+        } else if(previousGameSpace.isOccupied())
         {
-            pawn = null;
-            redPanel.clearSelectedPawn();
+            foreach(Vector2 v in validMoves)
+            {
+                if(v == selectedGameSpace.getCoordinates())
+                {
+                    //pawn.moveGamePiece(selectedGameSpace.getCoordinates() - previousGameSpace.getCoordinates(), );
+                }
+            }
         }
         
+
         
     }
+
+    
 }

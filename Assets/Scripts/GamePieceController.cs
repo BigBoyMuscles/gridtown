@@ -123,6 +123,14 @@ public class GamePieceController : GamePiece
 
     public override Vector2[] getMoves()
     {
-        return this.moves;
+        Vector2[] m = new Vector2[4];
+
+        m[0] = Vector2.up + coordinates;
+        m[1] = Vector2.right + coordinates;
+        m[2] = Vector2.down + coordinates;
+        m[3] = Vector2.left + coordinates;
+
+
+        return m;
     }
 }

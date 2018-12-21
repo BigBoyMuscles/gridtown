@@ -1,11 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Rook : GamePiece {
 
     public GamePieceController controller;
+    public Board gameBoard;
     private PawnStats stats;
+    
     //private new Sprite graveMarker;
 
     // Use this for initialization
@@ -14,7 +17,7 @@ public class Rook : GamePiece {
         controller = GetComponent<GamePieceController>();
         this.graveMarker = controller.graveMarker;
         stats = GetComponent<PawnStats>();
-        
+        gameBoard = GetComponentInParent<Board>();
     }
 
     // Update is called once per frame
@@ -40,8 +43,7 @@ public class Rook : GamePiece {
 
     public override void moveGamePiece(Vector2 direction)
     {
-        controller.moveGamePiece(direction, 1);
-        controller.moveGamePiece(new Vector2(1, 1), 1);
+        controller.moveGamePiece(direction, 1);     
     }
 
     public override void setCoordinates(Vector2 coords)
@@ -61,6 +63,27 @@ public class Rook : GamePiece {
 
     public override Vector2[] getMoves()
     {
-        return this.moves;
+
+        GameSpace[] row = gameBoard.getRow((int)controller.getCoordinates().y);
+        GameSpace[] column = gameBoard.getColumn((int)controller.getCoordinates().x);
+
+        int mSize = row.Length + column.Length;
+
+        GameSpace[] m = new GameSpace[mSize];
+
+        Array.Copy(row, m, row.Length);
+        Array.Copy(column, 0, m, row.Length, column.Length);
+
+        Vector2[] validMoves = new Vector2[m.Length];
+
+        for(int i = 0; i < validMoves.Length; i++)
+        {
+            validMoves[i] = m[i].getCoordinates();
+            Debug.Log("Valid Move: " + validMoves[i]);
+        }
+
+        return validMoves;
+
+
     }
 }

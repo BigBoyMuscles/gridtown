@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -94,9 +95,9 @@ public class Board : MonoBehaviour {
         placePawn(4, 2, basePawn);
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 
 	}
 
@@ -104,14 +105,14 @@ public class Board : MonoBehaviour {
     public void hoverTile(Vector2 coords)
     {
         hoveredGameSpace = gameBoard[(int)coords.x, (int)coords.y];
-        hoveredGameSpace.setTileShader(hoverTileShader);
+        //hoveredGameSpace.setTileShader(hoverTileShader);
         //highlightNeighbors();
     }
 
     // Called when the mouse leaves a tile's collision box
     public void clearHoverTile()
     {
-        hoveredGameSpace.setTileShader(standardTileShader);
+        //hoveredGameSpace.setTileShader(standardTileShader);
         //clearNeighborHightlight();
         hoveredGameSpace = null;
     }
@@ -120,9 +121,7 @@ public class Board : MonoBehaviour {
     public void selectTile(Vector2 coords)
     {
         selectedGameSpace = getTile(coords);
-
-        Debug.Log("Selected Tile: " + coords);
-
+        
         game.setSelectedGameSpace(selectedGameSpace);
 
     }
@@ -184,7 +183,17 @@ public class Board : MonoBehaviour {
         s.setTileShader(hoverTileShader);
     }
 
-    public void highlightGameSpace(GameSpace[] spaces)
+    public void highlightGameSpace(Vector2 v)
+    {
+        getTile(v).setTileShader(hoverTileShader);
+    }
+
+    public void highlightGameSpace(Vector2 v, Shader shader)
+    {
+        getTile(v).setTileShader(shader);
+    }
+
+    public void highlightGameSpaces(GameSpace[] spaces)
     {
         foreach(GameSpace s in spaces)
         {
@@ -192,11 +201,35 @@ public class Board : MonoBehaviour {
         }
     }
 
-    public void dimGameSpace(GameSpace[] spaces)
+    public void highlightGameSpaces(Vector2[] spaces)
+    {
+        foreach(Vector2 v in spaces)
+        {
+            getTile(v).setTileShader(hoverTileShader);
+        }
+    }
+
+    public void highlightGameSpaces(Vector2[] spaces, Shader shader)
+    {
+        foreach (Vector2 v in spaces)
+        {
+            getTile(v).setTileShader(shader);
+        }
+    }
+
+    public void dimGameSpaces(GameSpace[] spaces)
     {
         foreach (GameSpace s in spaces)
         {
             s.setTileShader(standardTileShader);
+        }
+    }
+
+    public void dimGameSpaces(Vector2[] spaces)
+    {
+        foreach (Vector2 v in spaces)
+        {
+            getTile(v).setTileShader(standardTileShader);
         }
     }
 
@@ -205,47 +238,34 @@ public class Board : MonoBehaviour {
         s.setTileShader(standardTileShader);
     }
 
-    //// Applies a shader to highligh tiles adjacent to tile mouse is hovering above
-    //public void highlightNeighbors()
-    //{
-    //    if(hoveredGameSpace.hasNeighbor.north)
-    //    {
-    //        hoveredGameSpace.neighbors[0].setTileShader(neighborTileShader);
-    //    }
-    //    if (hoveredGameSpace.hasNeighbor.east)
-    //    {
-    //        hoveredGameSpace.neighbors[1].setTileShader(neighborTileShader);
-    //    }
-    //    if (hoveredGameSpace.hasNeighbor.south)
-    //    {
-    //        hoveredGameSpace.neighbors[2].setTileShader(neighborTileShader);
-    //    }
-    //    if (hoveredGameSpace.hasNeighbor.west)
-    //    {
-    //        hoveredGameSpace.neighbors[3].setTileShader(neighborTileShader);
-    //    }
-    //}
 
-    // Replaces neighbor highlight shader with standard tile shader when tile is no longer hovered over
-    //public void clearNeighborHightlight()
-    //{
-    //    if (hoveredGameSpace.hasNeighbor.north)
-    //    {
-    //        hoveredGameSpace.neighbors[0].setTileShader(standardTileShader);
-    //    }
-    //    if (hoveredGameSpace.hasNeighbor.east)
-    //    {
-    //        hoveredGameSpace.neighbors[1].setTileShader(standardTileShader);
-    //    }
-    //    if (hoveredGameSpace.hasNeighbor.south)
-    //    {
-    //        hoveredGameSpace.neighbors[2].setTileShader(standardTileShader);
-    //    }
-    //    if (hoveredGameSpace.hasNeighbor.west)
-    //    {
-    //        hoveredGameSpace.neighbors[3].setTileShader(standardTileShader);
-    //    }
-    //}
+
+    public Vector2[] getValidMoves(Vector2[] moves)
+    {
+        int i = 0;
+
+        Vector2[] temp = new Vector2[moves.Length];
+        
+        foreach(Vector2 v in moves)
+        {
+            if(getTile(v) != null)
+            {
+                temp[i] = moves[i];
+            }
+        }
+
+        return temp;
+    }
+
+
+
+    public void dimAllSpaces()
+    {
+        foreach(GameSpace s in gameBoard)
+        {
+            s.setTileShader(standardTileShader);
+        }
+    }
 
     public void placePawn(Vector2 coords, GamePiece t)
     {
