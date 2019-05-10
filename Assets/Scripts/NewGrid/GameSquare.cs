@@ -1,63 +1,71 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameSquare : MonoBehaviour {
+public class GameSquare : MonoBehaviour, iCopyable {
 
     private SpriteRenderer rend;
 
-    // Each gamespace has 1 face, 2 edges (left and bottom) and 1 vertex (bottom left) to
-    // Uniquely identify each space. 
-
-    private Face face;
-    private Edge sideEdge;
-    private Edge bottomEdge;
-    private Vertex vertex;
+    private Vector2 gridCoordinates;
 
     private GameBoard board;
 
-    // Use this for initialization
-    void Start () {
+    public delegate void GameSquareClicked(Vector2 coordinates);
+    public static event GameSquareClicked OnGameSquareClicked;
 
+    public delegate void GameSquareHover(Vector2 coordinates);
+    public static event GameSquareHover OnGameSquareHover;
+
+    public delegate void GameSquareHoverExit(Vector2 coordinates);
+    public static event GameSquareHoverExit OnGameSquareHoverExit;
+
+    void Start () {
         rend = GetComponent<SpriteRenderer>();
         board = GetComponentInParent<GameBoard>();
+    }
+
+	void Update () {
 
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-    public void Initialize(Vector2 coord)
+    public void SetCoordinates(Vector2 coord)
     {
-        face = new Face(coord);
-        sideEdge = new Edge(coord, true);
-        bottomEdge = new Edge(coord, false);
-        vertex = new Vertex(coord);
-
+        gridCoordinates = coord;
         transform.position = new Vector3((coord.x * 1.125f) - 4, (coord.y * 1.125f) - 4, 0);
-        
-        //transform.position = (coord);
     }
 
     private void OnMouseEnter()
     {
-        board.squareMouseEnter(this);
+        if (OnGameSquareHover != null)
+        {
+            OnGameSquareHover(gridCoordinates);
+        }
     }
 
     private void OnMouseDown()
     {
-        board.selectTile(face.getCoordinates());
+        if (OnGameSquareClicked != null)
+        {
+            OnGameSquareClicked(gridCoordinates);
+        }
     }
 
     private void OnMouseExit()
     {
-        board.squareMouseExit(this);
+        if (OnGameSquareHoverExit != null)
+        {
+            OnGameSquareHoverExit(gridCoordinates);
+        }
     }
 
     public void setShader(Shader shader)
     {
         rend.material.shader = shader;
+    }
+
+    public iCopyable Copy()
+    {
+        return Instantiate(this);
     }
 }

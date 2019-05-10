@@ -26,7 +26,7 @@ public class Edge {
     {
         coordinates = coords;
         this.vertical = isVertical;
-        //continues();
+        continues();
     }
 
     private void continues()
